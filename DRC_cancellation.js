@@ -574,6 +574,9 @@ const signTDRnow3=http.post( `${KdaUrl}/tdr/application/sign`,JSON.stringify({
 
 
 
+
+
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  
 
@@ -600,7 +603,9 @@ const VerifyNewApplication = (applicationId, access_token) => {
 };
 
 
+  const verifyBySubVerifier=VerifyNewApplication(applicationIdByUser,login_Access_TDR_APPLICATION_SUB_VERIFIER_main)
   const verifyByVerifier=VerifyNewApplication(applicationIdByUser,login_Access_TDR_APPLICATION_VERIFIER_main)
+  console.log("rabbit",JSON.parse(verifyBySubVerifier.body))
 
 
   // console.log("verifyByVerifier",verifyByVerifier)

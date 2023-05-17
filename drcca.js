@@ -590,199 +590,85 @@ console.log("Application Approved")
     console.log(`Fetch Application for ${applicationIdByUser}`, fetchAppReposne.data) 
     const myApplId=fetchAppReposne
 
+    // post to /tdr/application/issueDrc to issue new DRC
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  
-
-// post to /tdr/application/issueDrc to issue new DRC
-
-const IssueDrcByVC = http.post(`${KdaUrl}/tdr/application/issueDrc`,  JSON.stringify({
-    applicationId: applicationIdByUser,
-    farGranted: 200
-}), {
-  headers: {
-    'Content-Type': 'application/json',
-    'Authorization': `Bearer ${login_Access_officer_drcIssuer_role_main}`,
-  },
-});
-
-const IssueDrcResponse=JSON.parse(IssueDrcByVC.body)
-const drcId=IssueDrcResponse.data.drcId
-console.log("drc isssued",IssueDrcResponse)
-
-signTrxnId(IssueDrcResponse.data.trxId,login_Access_officer_drcIssuer_role_main)
-
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
-
-
-// post to /drc/application/transfer/create to issue new DRC
-
-// const transferDrcByUser = http.post(`${KdaUrl}/drc/application/transfer/create`,  JSON.stringify({
-//   dta: {
-//     drcId: drcId,
-//     farTransferred: 100,
-//     buyers: [
-//         "KDAUSER01116"
-//     ],
-//     status: "pending"
-// },
-// documents: {
-//     saleDeed: {
-//         file_type: "pdf",
-//         file_data: "JVBERi0xLjQKJ..."
-//     }
-// }
-// }), {
-//   headers: {
-//     'Content-Type': 'application/json',
-//     'Authorization': `Bearer ${user_login_Access_Token}`,
-//   },
-// });
-
-// const transferDrcResponse=JSON.parse(transferDrcByUser.body)
-// console.log("transferDrcResponse",transferDrcResponse.data)
-// signTrxnIdUser(transferDrcResponse.data.trxId,user_login_Access_Token)
-
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  
-
-//post to  drc/application/transfer/sign to sign application
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  
-
-
-//Utilixzation 
-
-//post to {{base_url}}/drc/application/utilization/create
-
-const createUtilization=http.post(`${KdaUrl}/drc/application/utilization/create`, JSON.stringify({
-    drcId:  drcId,
-    farUtilized: 100,
-    drcUtilizationDetails: {
-      landUse: "COMMERCIAL",
-      areaType: "BUILT",
-      roadWidth: 12,
-      purchasableFar: 2,
-      basicFar: 1,
-      circleRateUtilization: 70
-  },
-    locationInfo: {
-      khasraOrPlotNo: "1278",
-      villageOrWard: "Kalyanpur",
-      Tehsil: "Kalyanpur",
-      district: "Kanpur"
+    const IssueDrcByVC = http.post(`${KdaUrl}/tdr/application/issueDrc`,  JSON.stringify({
+        applicationId: applicationIdByUser,
+        farGranted: 200
+    }), {
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${login_Access_Token_VC_role}`,
+      },
+    });
+    
+    const IssueDrcResponse=JSON.parse(IssueDrcByVC.body)
+    const drcId=IssueDrcResponse.data.drcId
+    console.log("drc isssued",IssueDrcResponse.data.drcId)
+    
+    signTrxnId(IssueDrcResponse.data.trxId,login_Access_Token_VC_role)
+    
+    
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
+    
+    
+    // post to /drc/application/transfer/create to issue new DRC
+    
+    // const transferDrcByUser = http.post(`${KdaUrl}/drc/application/transfer/create`,  JSON.stringify({
+    //   dta: {
+    //     drcId: drcId,
+    //     farTransferred: 100,
+    //     buyers: [
+    //         "KDAUSER01116"
+    //     ],
+    //     status: "pending"
+    // },
+    // documents: {
+    //     saleDeed: {
+    //         file_type: "pdf",
+    //         file_data: "JVBERi0xLjQKJ..."
+    //     }
+    // }
+    // }), {
+    //   headers: {
+    //     'Content-Type': 'application/json',
+    //     'Authorization': `Bearer ${user_login_Access_Token}`,
+    //   },
+    // });
+    
+    // const transferDrcResponse=JSON.parse(transferDrcByUser.body)
+    // console.log("transferDrcResponse",transferDrcResponse.data)
+    // signTrxnIdUser(transferDrcResponse.data.trxId,user_login_Access_Token)
+    
+    
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    
+    
+    // drc cancellation flow
+    
+    //post to  /drc/cancel
+    
+    
+    const RejectDrcByVC = http.post(`${KdaUrl}/drc/cancel`,  JSON.stringify({
+        drcId: drcId,
+        reason:"Not intrested"
+    }), {
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${login_Access_Token_VC_role}`,
+      },
+    });
+    
+    const RejectDrcResponse=RejectDrcByVC.body
+    console.log(RejectDrcResponse)
+    
     }
-  }), {
-    headers: {
-      'Content-Type': 'application/json',
-      'Authorization': `Bearer ${user_login_Access_Token}`,
-    },
-  });
-
-  console.log("create utilization appl",createUtilization.body)
-  const AppIdDUA=JSON.parse(createUtilization.body).data.applicationId
-  console.log(AppIdDUA)
-  const duaSignTrxId=JSON.parse(createUtilization.body).data.trxId
-
-  signTrxnIdUser(duaSignTrxId,user_login_Access_Token)
-
-
-//post to {{base_url}}/drc/application/utilization/sign
-
-const signUtilization1=http.post(`${KdaUrl}/drc/application/utilization/sign`, JSON.stringify({
-    applicationId:AppIdDUA
-
-}), {
-headers: {
-  'Content-Type': 'application/json',
-  'Authorization': `Bearer ${user_login_Access_Token}`,
-}},)
-
-const responseOutputDUC1=JSON.parse(signUtilization1.body)
-console.log("sign utilization sign",responseOutputDUC1)
-signTrxnIdUser(duaSignTrxId,user_login_Access_Token)
-
-
-const signUtilization2=http.post(`${KdaUrl}/drc/application/utilization/sign`, JSON.stringify({
-  applicationId:AppIdDUA
-}), {
-headers: {
-  'Content-Type': 'application/json',
-  'Authorization': `Bearer ${user_login_Access_Token1}`,
-}},)
-const responseOutputDUC2=JSON.parse(signUtilization2.body)
-console.log("sign utilization sign",responseOutputDUC2)
-
-
-const signUtilization3=http.post(`${KdaUrl}/drc/application/utilization/sign`, JSON.stringify({
-  applicationId:AppIdDUA
-}), {
-headers: {
-  'Content-Type': 'application/json',
-  'Authorization': `Bearer ${user_login_Access_Token2}`,
-}},)
-
-const responseOutputDUC3=JSON.parse(signUtilization3.body)
-console.log("sign utilization sign",responseOutputDUC3)
-
-
-const signUtilization4=http.post(`${KdaUrl}/drc/application/utilization/sign`, JSON.stringify({
-  applicationId:AppIdDUA
-}), {
-headers: {
-  'Content-Type': 'application/json',
-  'Authorization': `Bearer ${user_login_Access_Token3}`,
-}},)
-
-const responseOutputDUC4=JSON.parse(signUtilization4.body)
-console.log("sign utilization sign",responseOutputDUC4)
-
-}
-
-
-
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-// drc cancellation flow
-
-
-
-
-
-
-
-
-
-// {
-//   "name": "Shubham Kunwar",
-//   "password": "Rabbit@1234",
-//   "soOrWoName": "so",
-//   "dob": "10/10/1998",
-//   "gender": "MALE",
-//   "mobileNumber": "9876543210",
-//   "email": "rabbit123@gmail.com",
-//   "photo": "123213",
-//   "address": {
-//       "address": "lapata ganj",
-//       "city": "Mumbai",
-//       "state": "gumnnaan",
-//       "pincode": 123123,
-//       "country": "India"
-//   }
-
-// }
-
-
-// {
-//   "success": true,
-//   "data": {
-//       "userId": "KDAOFSR00061"
-//   }
-// }
+    
+    
+    
+    
+    
+    
