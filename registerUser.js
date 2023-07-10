@@ -9,9 +9,10 @@ const loginOtpUser = "12345"
 
 export let options = {
   vus: 1, // Virtual users
-  // duration: "40s"
+  // duration: "50s"
 };
 
+// const KdaUrl = "https://api-kda-staging.c3ihub.org"
 const KdaUrl = "https://api-kda-dev.c3ihub.org"
 
 const soOrWoNames = ['so', 'wo'];
@@ -27,9 +28,9 @@ function generateUser() {
   let gender = randomItem(genders);
   let registrationType = randomItem(org)
   let mobileNumber = '9876543210';
-  let email = `ankitt12@c3ihub.iitk.ac.in`;
+  let email = `shubhamkunwar.evilsk@gmail.com`;
   let aadhaarNumber = Math.floor(100000000000 + Math.random() * 900000000000).toString().substring(0, 12);
-  let photo = Math.floor(Math.random() * 1000000).toString();
+  let photo = "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEA";
   let address = {
     address: 'lapata ganj',
     city: 'Mumbai',
@@ -37,7 +38,7 @@ function generateUser() {
     pincode: Math.floor(Math.random() * 900000) + 100000,
     country: 'India',
   };
-  let aadhaar ="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEA"
+  let aadhaar = "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEA"
 
   return {
     name,
@@ -61,7 +62,7 @@ function generateOfficer() {
   let dob = '01/01/1990';
   let gender = randomItem(genders);
   let mobileNumber = '9876543210';
-  let email = `${name}@example.com`;
+  let email = `shubhamkunwar10+1@gmail.com`;
   let photo = Math.floor(Math.random() * 1000000).toString();
   let address = {
     address: 'lapata ganj',

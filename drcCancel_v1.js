@@ -750,30 +750,3 @@ console.log(RejectDrcResponse)
 
 
 
-
-// {
-//   "name": "Shubham Kunwar",
-//   "password": "Rabbit@1234",
-//   "soOrWoName": "so",
-//   "dob": "10/10/1998",
-//   "gender": "MALE",
-//   "mobileNumber": "9876543210",
-//   "email": "rabbit123@gmail.com",
-//   "photo": "123213",
-//   "address": {
-//       "address": "lapata ganj",
-//       "city": "Mumbai",
-//       "state": "gumnnaan",
-//       "pincode": 123123,
-//       "country": "India"
-//   }
-
-// }
-
-
-// {
-//   "success": true,
-//   "data": {
-//       "userId": "KDAOFSR00061"
-//   }
-// }

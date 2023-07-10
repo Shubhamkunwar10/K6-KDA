@@ -1,163 +1,176 @@
-function toUpperCase(str) {
-    return str.toUpperCase();
-  }
-  
-  const myString = `  
-  Scheme of Kanpur Development Authority 
-  Zone-1 
-  SL. NO. NAME OF COLONY 
-  1 Maharshi Dayanand vihar phase-1 
-  2 Maharshi Dayanand vihar phase-2 
-  3 Maharshi Dayanand vihar Vistar 
-  4 Annapurna Enclave-1 
-  5 Annapurna Enclave-2 
-  6 Khayora Bangar 
-  7 Harikishan nagar 
-  8 Visayakpur Bangar 
-  9 Chaitanya Vihar 
-  10 Canal Patti 
-  11 Pokharpur KUDP 
-  12 Gutaiya A,B,C,D,F,H,L,M,O,P,Q,S,T,U,V&G,W,X&X-1,Y,Z 
-  13 Lakhanpur Block-A 
-  14 Lakhanpur Block-A-1, 
-  15 Lakhanpur Block-B 
-  16 Indira Nagar 
-  17 Jajmau  
-  18 Old Kanpur  Block-West 
-  19 Old Kanpur  Block-East 
-  20 Old Kanpur Block-Central 
-  21 Raipurwa A,B,C 
-  22 Krishna Nagar X1 Block 
-  23 Sisamau Scheme-iv 
-  24 Sisamau Scheme-XXVII 
-  25 KALYANPUR C-BLOCK 
-  26 PARSHAD NAGAR 
-  27 MUKHARJI VIHAR  
-  28 DALELPURWA 
-  29 NACH GHAR  BIRHANA ROAD  
-  30 GWALTOLI 
-  31 KHALASI LINE  
-  32 ASHIYANA  
-   
-   
+import http from 'k6/http';
+import { sleep } from 'k6';
 
-   
-   
-  Scheme of Kanpur Development Authority 
-  Zone-2 
-  SL. NO. NAME OF COLONY 
-  1 South East Corner (ratanpur vistar-1) 
-  2 Ratanpur vistar Future pocket 
-  3 Shatabdi Nagar-1,2,3,4 
-  4 Mandakini Enclave (Shatabdi Nagar phase-5) 
-  5 Ramganga Enclave (Shatabdi Nagar phase-3) 
-  6 Mahaveer Nagar Extention 
-  7 Swaraj nagar, C-Block panki 
-  8 Ahilyabai Holkar nagar, E-Block panki 
-  9 Ganesh Shankar Vidhyarthi nagar F-Block panki 
-  10 Ratanpur housing Scheme 25 LIG, 150 EWS, 366 EWS, 625 LIG, 697 EWS, 876 
-  EWS, 1550 EWS 
-  11 Ratanpur 50 MIG houses  
-  12 Panki gangaganj ( Ashrya Bhawan) 
-  13 Ratanpur vistar ( Ashrya Bhawan) 
-  14 Mirzapur E-type 
-  15 Ratanpur vistar Part-2 (sector-14) 
-  16 Mahaveer Nagar 
-  17 Gautam vihar, Shivli road 
-  18 Jawaharpuram sector 1,2,3,4,4-a,8,12,14 
-  19 Kalindi nagar panki 
-  20 Panki All Block A,B,C,D,E,F 
-  21 Panki Ganga ganj 1,2,3,4 
-  22 Kakadev  
-  23 Narayan purwa 
-  24 Vijay Nagar 
-  25 F.W.Area Fajalganj 
-  26 Harihar Nath Shashtri Nagar 
-   
+export let options = {
+  vus: 1, // Virtual usersz
+//   duration: '3s', // Test duration
+};
 
-   
-  Scheme of Kanpur Development Authority 
-  Zone-3 
-  SL. NO. NAME OF COLONY 
-  1 Arra Bingawan 
-  2 Naubasta 
-  3 Bingawan Morang Mandi 
-  4 Jarauli 
-  5 Gujaini Ambedkar Nagar 
-  6 Gujaini Ravidashpuram 
-  7 Barra 1,2,3,4,5,6,7 
-  8 Barra Z-1 
-  9 Kapli panki, Transport nagar 
-  10 Transport Nagar phase-1,2,3,4 
-  11 Vayapar Nagar 
-  12 Ispat Nagar 
-  13 Kalpi Nagar 
-  14 Dabauli 
-  15 Dabauli East, West 
-  16 Khadepur Arra 
-  17 Barra KUDP A,A-1,B,C,C-1,D,E,H,H-1,I,I-1,J,K,K-1 
-  18 Barra UPUDP A,B,C,D,E,F,F-1 
-  19 Vaidehi vihar, Jarauli 
-  20 W-Block juhi Kala 
-  21 W-1 Block Juhi Kala 
-  22 W-2 Block Juhi Kala 
-  23 U Block Nirala Nagar 
-  24 Govind Nagar  A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W 
-  25 Building material market Juhi A,B 
-  26 VASHUDHA VIHAR 
-  27 Gujaini KUDP A,B,C,D,F,G,I,J,K 
-  28 jarauli phase -1 
-  29 jarauli phase -2 
-  30 Ratanlal Nagar 
-  31 Tatyatopey nagar phase-1 
-  32 Tatyatopey nagar phase-2 
-  33 Tatyatopey nagar phase-3 
-  34 Canalpatri W-Block 
-  35 S-Block juhi Kala 
-  36 T-Block juhi Kala 
-  37 V-Block juhi Kala 
-  38 Building material market W-Block ,Juhi 
-  39 VASHNAVI VIHAR 
-  40 GULMOHAR VIHAR  
-  41 GOVIND NAGAR INDUSTRIAL 
-  42 DADANAGAR 
-  43 JUHI -SAPHED COLONY  
-  Scheme of Kanpur Development Authority 
-  Zone-4 
-  SL. NO. NAME OF COLONY 
-  1 Babupurwa A,B,C,D,E,F,G 
-  2 H- Block, Kidwai Nagar 
-  3 H-1 Block, Kidwai Nagar 
-  4 H-2 Block, Kidwai Nagar 
-  5 K- Block, Kidwai Nagar 
-  6 L- Block, Kidwai Nagar 
-  7 L-1 Block, Kidwai Nagar 
-  8 M Block, Kidwai Nagar 
-  9 N Block, Kidwai Nagar 
-  10 O Block, Kidwai Nagar 
-  11 O Block, Sabjimandi, Kidwai Nagar 
-  12 P Block, Kidwai Nagar 
-  13 P-1 Block, Kidwai Nagar 
-  14 Q Block, Kidwai Nagar 
-  15 Y-Block, Kidwai Nagar 
-  16 Y-1 Block, Kidwai Nagar 
-  17 Rattupurva Transport Nagar P1,P2 
-  18 Todakpur 1,2,3,4 DEENDAYAL PURAM 
-  19 Daheli Sujanpur  
-  20 Shiv ganga Enclave  
-  21 Swarnjayanti vihar phase 5,8,9 
-  22 Bhurpur Machhariya  6,7 
-  23 Swarnjayanti vistar part-1 E.W.S 
-  24 Highway city A,B,C,D,E,F,G 
-  25 Highway city vistar part-1  
-  26 Highway city vistar part-2 
-  27 Chandra nagri Part 2 
-  28 Chandra nagri Part 3 
-  29 Alaknanda Enclave  
-  30 Swarjayanti vihar 1,2,3 
-  31 Sujatganj A,B,C,D,E 
-  32 Gangapur machhariya 
-  33 Chakeri Center function 1,2 
-   `
-const uppercased = toUpperCase(myString);
-console.log(uppercased); // Output: "HELLO WORLD"
+const KdaUrl="https://api-kda-dev.c3ihub.org"
+// const KdaUrl = "https://api-kda-staging.c3ihub.org"
+
+const device_id="5678-5678-5678-1234"
+
+
+//for applicants on tdr/application/create
+
+// const userRregistrationId="KDAUSER00035";  //460678122020
+// const userRregistrationId2="KDAUSER00032"; //719881070754
+// const userRregistrationId3="KDAUSER00033"; //606636803146
+// const userRregistrationId4="KDAUSER00034"; //940392114286
+
+const userRregistrationId="KDAUSER00376";  //467317782961
+const userRregistrationId2="KDAUSER00377"; //331142004297
+const userRregistrationId3="KDAUSER00378"; //178207150100
+const userRregistrationId4="KDAUSER00379"; //668418909439
+
+
+const userNewPassword="Rabbit@12345"
+const loginOtpUser="1234565"
+
+// const KDAofficerId="KDAOFSR00103" 
+// const officerPassword="Rabbit@1234"
+
+const KDAofficerId="KDAOFSR00876" 
+const officerPassword="Rabbit@1234"
+
+
+
+// const officer_USER_MANAGER="KDAOFSR00102" //sahil
+// const officer_kda_registrar="KDAOFSR00084"
+// const officer_tdr_notice_manager="KDAOFSR00085" //shubham
+// const officer_TDR_APPLICATION_VERIFIER ="KDAOFSR00087" //anurag
+// const officer_TDR_APPLICATION_SUB_VERIFIER ="KDAOFSR00088"  //ankit
+// const officer_TDR_APPLICATION_SUB_VERIFIER1 ="KDAOFSR00089" 
+// const officer_TDR_APPLICATION_SUB_VERIFIER2 ="KDAOFSR00090" 
+// const officer_TDR_APPLICATION_SUB_VERIFIER3 ="KDAOFSR00091" 
+// const officer_TDR_APPLICATION_SUB_VERIFIER4 ="KDAOFSR00092" 
+// const officer_TDR_APPLICATION_SUB_VERIFIER5 ="KDAOFSR00093" 
+// const officer_Chief_planner="KDAOFSR00094"
+// const officer_Chief_engineer="KDAOFSR00095"
+// const officerDM="KDAOFSR00096" 
+// const officer_drcIssuer="KDAOFSR00097"
+// const officer_DTA_verifier="KDAOFSR00098"
+// const officer_DTA_Approver="KDAOFSR00099"
+// const officer_DRC_MANAGER ="KDAOFSR00100"
+// const officer_NOMINEE_MANAGER ="KDAOFSR00101"
+
+const officer_USER_MANAGER="KDAOFSR00383" //sahil
+const officer_kda_registrar="KDAOFSR00384"
+const officer_tdr_notice_manager="KDAOFSR00883" //shubham
+const officer_TDR_APPLICATION_VERIFIER ="KDAOFSR00386" //anurag
+const officer_TDR_APPLICATION_SUB_VERIFIER ="KDAOFSR00388"  //ankit
+const officer_TDR_APPLICATION_SUB_VERIFIER1 ="KDAOFSR00517" 
+const officer_TDR_APPLICATION_SUB_VERIFIER2 ="KDAOFSR00518" 
+const officer_TDR_APPLICATION_SUB_VERIFIER3 ="KDAOFSR00519" 
+const officer_TDR_APPLICATION_SUB_VERIFIER4 ="KDAOFSR00520" 
+const officer_TDR_APPLICATION_SUB_VERIFIER5 ="KDAOFSR00521" 
+const officer_Chief_planner="KDAOFSR00389"
+const officer_Chief_engineer="KDAOFSR00392"
+const officerDM="KDAOFSR00393" 
+const officer_drcIssuer="KDAOFSR00394"
+const officer_DTA_verifier="KDAOFSR00395"
+const officer_DTA_Approver="KDAOFSR00396"
+const officer_DRC_MANAGER ="KDAOFSR00397"
+const officer_NOMINEE_MANAGER ="KDAOFSR00398"
+
+
+
+const user_login_Access_Token="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0eXBlIjoiQUNDRVNTIFRPS0VOIiwiaWQiOiJLREFVU0VSMDAzNzYiLCJ1c2VybmFtZSI6ImJvajN2cyIsInJvbGUiOiJVU0VSIiwidXNlcl90eXBlIjoiVVNFUiIsImV4cCI6MTY4NDg0MzE1MiwiaWF0IjoxNjg0NzU2NzUyLCJ0b2tlbl9pZCI6ImE1MWUzMmYxLWIxN2UtNDQ1ZS05NWZhLWJkYTQ0NGYwOTZiNiJ9.BPxes6uujOI2GXEzQas6tO2PD1iC6Xj_PK6yCkzvPHE"
+const user_login_Access_Token1="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0eXBlIjoiQUNDRVNTIFRPS0VOIiwiaWQiOiJLREFVU0VSMDAzNzciLCJ1c2VybmFtZSI6Imp0aTJkbSIsInJvbGUiOiJVU0VSIiwidXNlcl90eXBlIjoiVVNFUiIsImV4cCI6MTY4NDg0MzE4MiwiaWF0IjoxNjg0NzU2NzgyLCJ0b2tlbl9pZCI6IjEyMDI5YmYyLTIyNzItNGY5My1hNWI0LWRlNTU4YjJmOGFhMCJ9.63AhfD7DwJMpJuCbzdSK_gqQSN56ANsP3UWD8Naq8WI"
+const user_login_Access_Token2="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0eXBlIjoiQUNDRVNTIFRPS0VOIiwiaWQiOiJLREFVU0VSMDAzNzgiLCJ1c2VybmFtZSI6InUxbWNuNyIsInJvbGUiOiJVU0VSIiwidXNlcl90eXBlIjoiVVNFUiIsImV4cCI6MTY4NDg0MzIxOCwiaWF0IjoxNjg0NzU2ODE4LCJ0b2tlbl9pZCI6ImViNzNlYzlkLTY2ODgtNDA3ZC1iYjk3LWQxY2VjMjcwZWQ3MCJ9.R6nh-bXUFMjRx9wU9bpCIfnix8pldGz7MeVUeeacmAU"
+const user_login_Access_Token3="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0eXBlIjoiQUNDRVNTIFRPS0VOIiwiaWQiOiJLREFVU0VSMDAzNzkiLCJ1c2VybmFtZSI6ImNwOGgxciIsInJvbGUiOiJVU0VSIiwidXNlcl90eXBlIjoiVVNFUiIsImV4cCI6MTY4NDg0MzI0MiwiaWF0IjoxNjg0NzU2ODQyLCJ0b2tlbl9pZCI6IjVmYmY4ZDdjLWMyOWItNGY0YS04M2M0LWQwMTIzMWI3MjFhZSJ9.1joJl3gh0lPswVQW6x8ZmiXpnsAkCmDoDyUMdujWzvM"
+
+
+
+// Main test scenario
+export default function() {
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  
+
+
+
+
+  //sign TrxId
+
+    const signTrxnId = async (trxId, access_token_input) => {
+
+      const endpoint = `${KdaUrl}/user/transaction/sign`
+
+      const data = JSON.stringify({
+        otp: loginOtpUser,
+        password: officerPassword,
+        trxId: trxId
+      });
+
+      const headers = {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${access_token_input}`,
+      };
+        const responseTrxId = http.post(endpoint, data, { headers });
+        const outputParse=JSON.parse(responseTrxId.body);
+        console.log(outputParse.data);
+    };
+
+    //sign TrxId
+
+    const signTrxnIdUser =(trxId, access_token_input) => {
+
+      const endpoint = `${KdaUrl}/user/transaction/sign`
+
+      const data = JSON.stringify({
+        otp: loginOtpUser,
+        password: userNewPassword,
+        trxId: trxId
+      });
+
+      const headers = {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${access_token_input}`,
+      };
+        const responseTrxId =http.post(endpoint, data, { headers });
+        const responseHash=JSON.parse(responseTrxId.body).data
+        console.log(trxId,"signed with info",responseHash)
+
+    };
+
+
+
+const transferDrcByUser = http.post(`${KdaUrl}/drc/application/transfer/create`,  JSON.stringify({
+  dta: {
+    drcId:  "DRC-Kanpur-Kalyanpur-124-01-7-1",
+    farTransferred: 100,
+    buyers: [
+        "KDAUSER00369"
+    ],
+    status: "pending"
+},
+documents: {
+    saleDeed: {
+        file_type: "pdf",
+        file_data: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEA"
+    }
+}
+}), {
+  headers: {
+    'Content-Type': 'application/json',
+    'Authorization': `Bearer ${user_login_Access_Token}`,
+  },
+});
+
+const transferDrcResponse=JSON.parse(transferDrcByUser.body)
+console.log("transferDrcResponse",transferDrcResponse)
+
+
+}
+
+
+
+
+

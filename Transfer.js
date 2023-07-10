@@ -6,51 +6,77 @@ export let options = {
 //   duration: '3s', // Test duration
 };
 
-const KdaUrl="https://api-kda-dev.c3ihub.org"
+// const KdaUrl="https://api-kda-dev.c3ihub.org"
+const KdaUrl = "https://api-kda-staging.c3ihub.org"
+
 const device_id="5678-5678-5678-1234"
 
 
 //for applicants on tdr/application/create
 
-const userRregistrationId="KDAUSER00202";  //343471014498
-const userRregistrationId2="KDAUSER00206"; //899113997580
-const userRregistrationId3="KDAUSER00207"; //173521727885
-const userRregistrationId4="KDAUSER00208"; //187783361035
+const userRregistrationId="KDAUSER00035";  //460678122020
+const userRregistrationId2="KDAUSER00032"; //719881070754
+const userRregistrationId3="KDAUSER00033"; //606636803146
+const userRregistrationId4="KDAUSER00034"; //940392114286
+
+// const userRregistrationId="KDAUSER00202";  //343471014498
+// const userRregistrationId2="KDAUSER00206"; //899113997580
+// const userRregistrationId3="KDAUSER00207"; //173521727885
+// const userRregistrationId4="KDAUSER00208"; //187783361035
 
 
 const userNewPassword="Rabbit@12345"
 const loginOtpUser="1234565"
 
-const KDAofficerId="KDAOFSR00381" 
+const KDAofficerId="KDAOFSR00103" 
 const officerPassword="Rabbit@1234"
 
 
 
-const officer_USER_MANAGER="KDAOFSR00383" //sahil
-const officer_kda_registrar="KDAOFSR00384"
-const officer_tdr_notice_manager="KDAOFSR00385" //shubham
-const officer_TDR_APPLICATION_VERIFIER ="KDAOFSR00386" //anurag
-const officer_TDR_APPLICATION_SUB_VERIFIER ="KDAOFSR00388"  //ankit
-const officer_TDR_APPLICATION_SUB_VERIFIER1 ="KDAOFSR00462" 
-const officer_TDR_APPLICATION_SUB_VERIFIER2 ="KDAOFSR00478" 
-const officer_TDR_APPLICATION_SUB_VERIFIER3 ="KDAOFSR00479" 
-const officer_TDR_APPLICATION_SUB_VERIFIER4 ="KDAOFSR00480" 
-const officer_TDR_APPLICATION_SUB_VERIFIER5 ="KDAOFSR00467" 
-const officer_Chief_planner="KDAOFSR00389"
-const officer_Chief_engineer="KDAOFSR00392"
-const officerDM="KDAOFSR00393" 
-const officer_drcIssuer="KDAOFSR00394"
-const officer_DTA_verifier="KDAOFSR00395"
-const officer_DTA_Approver="KDAOFSR00396"
-const officer_DRC_MANAGER ="KDAOFSR00397"
-const officer_NOMINEE_MANAGER ="KDAOFSR00398"
+const officer_USER_MANAGER="KDAOFSR00102" //sahil
+const officer_kda_registrar="KDAOFSR00084"
+const officer_tdr_notice_manager="KDAOFSR00085" //shubham
+const officer_TDR_APPLICATION_VERIFIER ="KDAOFSR00087" //anurag
+const officer_TDR_APPLICATION_SUB_VERIFIER ="KDAOFSR00088"  //ankit
+const officer_TDR_APPLICATION_SUB_VERIFIER1 ="KDAOFSR00089" 
+const officer_TDR_APPLICATION_SUB_VERIFIER2 ="KDAOFSR00090" 
+const officer_TDR_APPLICATION_SUB_VERIFIER3 ="KDAOFSR00091" 
+const officer_TDR_APPLICATION_SUB_VERIFIER4 ="KDAOFSR00092" 
+const officer_TDR_APPLICATION_SUB_VERIFIER5 ="KDAOFSR00093" 
+const officer_Chief_planner="KDAOFSR00094"
+const officer_Chief_engineer="KDAOFSR00095"
+const officerDM="KDAOFSR00096" 
+const officer_drcIssuer="KDAOFSR00097"
+const officer_DTA_verifier="KDAOFSR00098"
+const officer_DTA_Approver="KDAOFSR00099"
+const officer_DRC_MANAGER ="KDAOFSR00100"
+const officer_NOMINEE_MANAGER ="KDAOFSR00101"
+
+// const officer_USER_MANAGER="KDAOFSR00383" //sahil
+// const officer_kda_registrar="KDAOFSR00384"
+// const officer_tdr_notice_manager="KDAOFSR00385" //shubham
+// const officer_TDR_APPLICATION_VERIFIER ="KDAOFSR00386" //anurag
+// const officer_TDR_APPLICATION_SUB_VERIFIER ="KDAOFSR00388"  //ankit
+// const officer_TDR_APPLICATION_SUB_VERIFIER1 ="KDAOFSR00517" 
+// const officer_TDR_APPLICATION_SUB_VERIFIER2 ="KDAOFSR00518" 
+// const officer_TDR_APPLICATION_SUB_VERIFIER3 ="KDAOFSR00519" 
+// const officer_TDR_APPLICATION_SUB_VERIFIER4 ="KDAOFSR00520" 
+// const officer_TDR_APPLICATION_SUB_VERIFIER5 ="KDAOFSR00521" 
+// const officer_Chief_planner="KDAOFSR00389"
+// const officer_Chief_engineer="KDAOFSR00392"
+// const officerDM="KDAOFSR00393" 
+// const officer_drcIssuer="KDAOFSR00394"
+// const officer_DTA_verifier="KDAOFSR00395"
+// const officer_DTA_Approver="KDAOFSR00396"
+// const officer_DRC_MANAGER ="KDAOFSR00397"
+// const officer_NOMINEE_MANAGER ="KDAOFSR00398"
 
 
 
-const user_login_Access_Token="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0eXBlIjoiQUNDRVNTIFRPS0VOIiwiaWQiOiJLREFVU0VSMDAyMDIiLCJ1c2VybmFtZSI6ImQ5bHkxIiwicm9sZSI6IlVTRVIiLCJ1c2VyX3R5cGUiOiJVU0VSIiwiZXhwIjoxNjg0NDA3Njg1LCJpYXQiOjE2ODQzMjEyODUsInRva2VuX2lkIjoiNjgzNWNkMzQtOTNmNy00NzM4LTg0NzUtZGFmNDhkM2MyOWMwIn0.VFAtZELc2tFWLSBPcYprgJqZHJjFHuwjyEPK5_FuKHg"
-const user_login_Access_Token1="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0eXBlIjoiQUNDRVNTIFRPS0VOIiwiaWQiOiJLREFVU0VSMDAyMDYiLCJ1c2VybmFtZSI6InBid2s5cCIsInJvbGUiOiJVU0VSIiwidXNlcl90eXBlIjoiVVNFUiIsImV4cCI6MTY4NDQwNzc1NSwiaWF0IjoxNjg0MzIxMzU1LCJ0b2tlbl9pZCI6IjJhMWNmMTZkLWM2ZmMtNDMwOS05YjY3LWZhMjAxYmIwNTg2NSJ9.bKx9ikMZdwwijNjuQkRJUj5dW7pPDgCC3KuaZU0e9sI"
-const user_login_Access_Token2="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0eXBlIjoiQUNDRVNTIFRPS0VOIiwiaWQiOiJLREFVU0VSMDAyMDciLCJ1c2VybmFtZSI6Inp1YXFkNyIsInJvbGUiOiJVU0VSIiwidXNlcl90eXBlIjoiVVNFUiIsImV4cCI6MTY4NDQwNzc4MiwiaWF0IjoxNjg0MzIxMzgyLCJ0b2tlbl9pZCI6ImRmOWQ3MWYzLWQxMWYtNGMyMi1hYjRhLTRmMTQwNjQ5NTFjYyJ9.HljepenN42RSTGm_urdcWJMK-0CAJLzJL0JlT9i-tAo"
-const user_login_Access_Token3="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0eXBlIjoiQUNDRVNTIFRPS0VOIiwiaWQiOiJLREFVU0VSMDAyMDgiLCJ1c2VybmFtZSI6IjRneTF2ZSIsInJvbGUiOiJVU0VSIiwidXNlcl90eXBlIjoiVVNFUiIsImV4cCI6MTY4NDQwNzgwNiwiaWF0IjoxNjg0MzIxNDA2LCJ0b2tlbl9pZCI6ImYxOGExZDBhLTNjMmUtNDhlYi04ZmZjLTVlZGU0ZGU1ODVhZSJ9.9JWMGccQPcItn300s_E5m0d3JvAKa2kEnIt4E06pO0o"
+const user_login_Access_Token="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0eXBlIjoiQUNDRVNTIFRPS0VOIiwiaWQiOiJLREFVU0VSMDAwMzUiLCJ1c2VybmFtZSI6ImJuOWEzbCIsInJvbGUiOiJVU0VSIiwidXNlcl90eXBlIjoiVVNFUiIsImV4cCI6MTY4NDQ5MjQzNSwiaWF0IjoxNjg0NDA2MDM1LCJ0b2tlbl9pZCI6IjhmMTkwNTVmLTMwMDItNDA4OS05OGVkLTRlNzRhMjRkMjIwZiJ9.7cKNSWTeTJFeoEfwir4NCdWcxqZOo0n_69Jj0tA7xxg"
+const user_login_Access_Token1="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0eXBlIjoiQUNDRVNTIFRPS0VOIiwiaWQiOiJLREFVU0VSMDAwMzIiLCJ1c2VybmFtZSI6ImM0NHlxIiwicm9sZSI6IlVTRVIiLCJ1c2VyX3R5cGUiOiJVU0VSIiwiZXhwIjoxNjg0NDkyMjI1LCJpYXQiOjE2ODQ0MDU4MjUsInRva2VuX2lkIjoiOTBhNzVjYzQtMDFlNy00N2VlLWFiODQtNGQ5YjlkM2FhZWFjIn0.WlQC_pikACNECU3cQQ8Y6I4hbe3sku0raTKHYymEXhU"
+const user_login_Access_Token2="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0eXBlIjoiQUNDRVNTIFRPS0VOIiwiaWQiOiJLREFVU0VSMDAwMzMiLCJ1c2VybmFtZSI6Imo4Y2s1aiIsInJvbGUiOiJVU0VSIiwidXNlcl90eXBlIjoiVVNFUiIsImV4cCI6MTY4NDQ5MjI0OSwiaWF0IjoxNjg0NDA1ODQ5LCJ0b2tlbl9pZCI6IjUwN2U2NDRiLTFmODctNGY0NS04ZTAyLTI0ZGMxMWIyYzVlMyJ9.CElpOUA61415yGUDWJgiJ9Hos7_6oC8h4N7FeD5676A"
+const user_login_Access_Token3="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0eXBlIjoiQUNDRVNTIFRPS0VOIiwiaWQiOiJLREFVU0VSMDAwMzQiLCJ1c2VybmFtZSI6Im93ZW1naCIsInJvbGUiOiJVU0VSIiwidXNlcl90eXBlIjoiVVNFUiIsImV4cCI6MTY4NDQ5MjMzNiwiaWF0IjoxNjg0NDA1OTM2LCJ0b2tlbl9pZCI6IjYxOGNiMmU5LWVlZmQtNGI4ZS05MjAxLTA5ODc4ODUxNjZhNiJ9.-2TtEV8aqV8Xnr8MbL4NHR2ZKazIbkEJzC9dnKhmmLU"
 
 
 
@@ -165,12 +191,12 @@ export default function() {
 
       
            // function to add officers
-        const addOfficersInfo =async (userId,designation,access_token) => {
+        const addOfficersInfo =async (userId,designation,department,access_token) => {
 
           const officerloginTrxID=http.post(`${KdaUrl}/kda/admin/addOfficer`, JSON.stringify({
             userId: userId,
             designation: `${designation}`,
-            department: "land",
+            department: department,
             zones:[1]
           }), {
           headers: {
@@ -221,51 +247,50 @@ export default function() {
 const login_Access_Token_VC_role = officerLogin(KDAofficerId);
 console.log("login_Access_Token_VC_role",login_Access_Token_VC_role)
 
-addOfficersInfo(officer_TDR_APPLICATION_SUB_VERIFIER ,"SUB_VERIFIER",login_Access_Token_VC_role)
-addOfficersInfo(officer_TDR_APPLICATION_SUB_VERIFIER1 ,"SUB_VERIFIER",login_Access_Token_VC_role)
-addOfficersInfo(officer_TDR_APPLICATION_SUB_VERIFIER2 ,"SUB_VERIFIER",login_Access_Token_VC_role)
-addOfficersInfo(officer_TDR_APPLICATION_SUB_VERIFIER3 ,"SUB_VERIFIER",login_Access_Token_VC_role)
-addOfficersInfo(officer_TDR_APPLICATION_SUB_VERIFIER4 ,"SUB_VERIFIER",login_Access_Token_VC_role)
-addOfficersInfo(officer_TDR_APPLICATION_SUB_VERIFIER5 ,"SUB_VERIFIER",login_Access_Token_VC_role)
+// addOfficersInfo(officer_TDR_APPLICATION_SUB_VERIFIER ,"SUB_VERIFIER","LAND",login_Access_Token_VC_role)
+// addOfficersInfo(officer_TDR_APPLICATION_SUB_VERIFIER1 ,"SUB_VERIFIER","PLANNING",login_Access_Token_VC_role)
+// addOfficersInfo(officer_TDR_APPLICATION_SUB_VERIFIER2 ,"SUB_VERIFIER","ENGINEERING",login_Access_Token_VC_role)
+// addOfficersInfo(officer_TDR_APPLICATION_SUB_VERIFIER3 ,"SUB_VERIFIER","PROPERTY",login_Access_Token_VC_role)
+// addOfficersInfo(officer_TDR_APPLICATION_SUB_VERIFIER4 ,"SUB_VERIFIER","SALES",login_Access_Token_VC_role)
+// addOfficersInfo(officer_TDR_APPLICATION_SUB_VERIFIER5 ,"SUB_VERIFIER","LEGAL",login_Access_Token_VC_role)
+
+// const adduserManagerInfo=addOfficersInfo(officer_USER_MANAGER,"NONE","land",login_Access_Token_VC_role)
+
+// const addKdaRegistrarInfo=addOfficersInfo(officer_kda_registrar,"NONE","land",login_Access_Token_VC_role)
+
+// const addNoticeManagerInfo=addOfficersInfo(officer_tdr_notice_manager,"ADMIN","land",login_Access_Token_VC_role)
+
+// const addTDRVerifierInfo=addOfficersInfo(officer_TDR_APPLICATION_VERIFIER,"VERIFIER","land",login_Access_Token_VC_role)
+
+// const addTDRSubVerifierInfo=addOfficersInfo(officer_TDR_APPLICATION_SUB_VERIFIER ,"SUB_VERIFIER","land",login_Access_Token_VC_role)
+
+// const addChiefPlannerInfo=addOfficersInfo(officer_Chief_planner,"CHIEF_TOWN_AND_COUNTRY_PLANNER","land",login_Access_Token_VC_role)
+
+// const addCheifEngineerInfo=addOfficersInfo(officer_Chief_engineer,"CHIEF_ENGINEER","land",login_Access_Token_VC_role)
+
+// const addDMInfo=addOfficersInfo(officerDM,"DM","land",login_Access_Token_VC_role)
+
+// const addDrcIssuer=addOfficersInfo(officer_drcIssuer,"NONE","land",login_Access_Token_VC_role)
+
+// const addDtaVerifier=addOfficersInfo(officer_DTA_verifier,"SUB_VERIFIER","land",login_Access_Token_VC_role)
+
+// const addDtaApprover=addOfficersInfo(officer_DTA_Approver,"NONE","land",login_Access_Token_VC_role)
+
+// const addDrcManager=addOfficersInfo(officer_DRC_MANAGER,"NONE","land",login_Access_Token_VC_role)
+
+// const addNomineeManager=addOfficersInfo(officer_NOMINEE_MANAGER,"NONE","land",login_Access_Token_VC_role)
 
 
-// const adduserManagerInfo=addOfficersInfo(officer_USER_MANAGER,"NONE",login_Access_Token_VC_role)
-
-// const addKdaRegistrarInfo=addOfficersInfo(officer_kda_registrar,"NONE",login_Access_Token_VC_role)
-
-// const addNoticeManagerInfo=addOfficersInfo(officer_tdr_notice_manager,"ADMIN",login_Access_Token_VC_role)
-
-// const addTDRVerifierInfo=addOfficersInfo(officer_TDR_APPLICATION_VERIFIER,"VERIFIER",login_Access_Token_VC_role)
-
-// const addTDRSubVerifierInfo=addOfficersInfo(officer_TDR_APPLICATION_SUB_VERIFIER ,"SUB_VERIFIER",login_Access_Token_VC_role)
-
-// const addChiefPlannerInfo=addOfficersInfo(officer_Chief_planner,"CHIEF_TOWN_AND_COUNTRY_PLANNER",login_Access_Token_VC_role)
-
-// const addCheifEngineerInfo=addOfficersInfo(officer_Chief_engineer,"CHIEF_ENGINEER",login_Access_Token_VC_role)
-
-// const addDMInfo=addOfficersInfo(officerDM,"DM",login_Access_Token_VC_role)
-
-// const addDrcIssuer=addOfficersInfo(officer_drcIssuer,"NONE",login_Access_Token_VC_role)
-
-const addDtaVerifier=addOfficersInfo(officer_DTA_verifier,"NONE",login_Access_Token_VC_role)
-
-// const addDtaApprover=addOfficersInfo(officer_DTA_Approver,"NONE",login_Access_Token_VC_role)
-
-// const addDrcManager=addOfficersInfo(officer_DRC_MANAGER,"NONE",login_Access_Token_VC_role)
-
-// const addNomineeManager=addOfficersInfo(officer_NOMINEE_MANAGER,"NONE",login_Access_Token_VC_role)
-
-
+// //Create Role
 // const set_tdr_notice_managerRole=setRole(officer_tdr_notice_manager,"TDR_NOTICE_MANAGER",login_Access_Token_VC_role)
 // const set_tdr_registrar_Role=setRole(officer_kda_registrar,"KDA_REGISTRAR",login_Access_Token_VC_role)
-// //Create Role
 // const setTDRVerifierRole=setRole(officer_TDR_APPLICATION_VERIFIER,"TDR_APPLICATION_VERIFIER",login_Access_Token_VC_role)
 // const setTDRSubVerifierRole=setRole(officer_TDR_APPLICATION_SUB_VERIFIER,"TDR_APPLICATION_SUB_VERIFIER",login_Access_Token_VC_role)
 // const setChiefPlannerRole=setRole(officer_Chief_planner,"TDR_APPLICATION_APPROVER_CHIEF_TOWN_AND_COUNTRY_PLANNER",login_Access_Token_VC_role)
 // const setCheifEngineerRole=setRole(officer_Chief_engineer,"TDR_APPLICATION_APPROVER_CHIEF_ENGINEER",login_Access_Token_VC_role)
 // const setDMRole=setRole(officerDM,"TDR_APPLICATION_APPROVER_DM",login_Access_Token_VC_role)
 // const setdrcIssuerRole=setRole(officer_drcIssuer,"DRC_ISSUER",login_Access_Token_VC_role)
-const setDTA_VERIFIERRole=setRole(officer_DTA_verifier,"DTA_VERIFIER",login_Access_Token_VC_role)
+// const setDTA_VERIFIERRole=setRole(officer_DTA_verifier,"DTA_VERIFIER",login_Access_Token_VC_role)
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  
@@ -325,7 +350,7 @@ const setDTA_VERIFIERRole=setRole(officer_DTA_verifier,"DTA_VERIFIER",login_Acce
      const adminCreateTdrNotice = http.post(`${KdaUrl}/tdr/notice/create`, JSON.stringify({
       notice: {
           locationInfo: {
-              khasraOrPlotNo: "12d3",
+              khasraOrPlotNo: "A72S3",
               scheme: "Kalyanpur",
               zone: 1,
               district: "Kanpur"
@@ -358,7 +383,7 @@ const setDTA_VERIFIERRole=setRole(officer_DTA_verifier,"DTA_VERIFIER",login_Acce
               }
           ],
           status: "PENDING",
-          propertyId: "Kanpur-Kalyanpur-124-1"
+          propertyId: "Kanpur-Kalyanpur-731-07"
       },
       documents: {
           order: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEA"
@@ -590,85 +615,87 @@ console.log("Application Approved")
     console.log(`Fetch Application for ${applicationIdByUser}`, fetchAppReposne.data) 
     const myApplId=fetchAppReposne
 
-    // post to /tdr/application/issueDrc to issue new DRC
 
-    const IssueDrcByVC = http.post(`${KdaUrl}/tdr/application/issueDrc`,  JSON.stringify({
-        applicationId: applicationIdByUser,
-        farGranted: 200
-    }), {
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${login_Access_Token_VC_role}`,
-      },
-    });
-    
-    const IssueDrcResponse=JSON.parse(IssueDrcByVC.body)
-    const drcId=IssueDrcResponse.data.drcId
-    console.log("drc isssued",IssueDrcResponse.data.drcId)
-    
-    signTrxnId(IssueDrcResponse.data.trxId,login_Access_Token_VC_role)
-    
-    
-    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  
-    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  
-    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
-    
-    
-    // post to /drc/application/transfer/create to issue new DRC
-    
-    // const transferDrcByUser = http.post(`${KdaUrl}/drc/application/transfer/create`,  JSON.stringify({
-    //   dta: {
-    //     drcId: drcId,
-    //     farTransferred: 100,
-    //     buyers: [
-    //         "KDAUSER01116"
-    //     ],
-    //     status: "pending"
-    // },
-    // documents: {
-    //     saleDeed: {
-    //         file_type: "pdf",
-    //         file_data: "JVBERi0xLjQKJ..."
-    //     }
-    // }
-    // }), {
-    //   headers: {
-    //     'Content-Type': 'application/json',
-    //     'Authorization': `Bearer ${user_login_Access_Token}`,
-    //   },
-    // });
-    
-    // const transferDrcResponse=JSON.parse(transferDrcByUser.body)
-    // console.log("transferDrcResponse",transferDrcResponse.data)
-    // signTrxnIdUser(transferDrcResponse.data.trxId,user_login_Access_Token)
-    
-    
-    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    
-    
-    // drc cancellation flow
-    
-    //post to  /drc/cancel
-    
-    
-    const RejectDrcByVC = http.post(`${KdaUrl}/drc/cancel`,  JSON.stringify({
-        drcId: drcId,
-        reason:"Not intrested"
-    }), {
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${login_Access_Token_VC_role}`,
-      },
-    });
-    
-    const RejectDrcResponse=RejectDrcByVC.body
-    console.log(RejectDrcResponse)
-    
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  
+
+// post to /tdr/application/issueDrc to issue new DRC
+
+const IssueDrcByVC = http.post(`${KdaUrl}/tdr/application/issueDrc`,  JSON.stringify({
+    applicationId: applicationIdByUser,
+    farGranted: 200
+}), {
+  headers: {
+    'Content-Type': 'application/json',
+    'Authorization': `Bearer ${login_Access_officer_drcIssuer_role_main}`,
+  },
+});
+
+const IssueDrcResponse=JSON.parse(IssueDrcByVC.body)
+const drcId=IssueDrcResponse.data.drcId
+console.log("drc isssued",IssueDrcResponse)
+
+signTrxnId(IssueDrcResponse.data.trxId,login_Access_officer_drcIssuer_role_main)
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
+
+
+// post to /drc/application/transfer/create to issue new DRC
+
+const transferDrcByUser = http.post(`${KdaUrl}/drc/application/transfer/create`,  JSON.stringify({
+  dta: {
+    drcId: drcId,
+    farTransferred: 100,
+    buyers: [
+        "KDAUSER01116"
+    ],
+    status: "pending"
+},
+documents: {
+    saleDeed: {
+        file_type: "pdf",
+        file_data: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEA"
     }
-    
-    
-    
-    
-    
-    
+}
+}), {
+  headers: {
+    'Content-Type': 'application/json',
+    'Authorization': `Bearer ${user_login_Access_Token}`,
+  },
+});
+
+const transferDrcResponse=JSON.parse(transferDrcByUser.body)
+console.log("transferDrcResponse",transferDrcResponse.data)
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  
+
+
+//post to {{base_url}}/drc/application/utilization/sign
+
+const signUtilization1=http.post(`${KdaUrl}/drc/application/utilization/sign`, JSON.stringify({
+    applicationId:AppIdDUA
+
+}), {
+headers: {
+  'Content-Type': 'application/json',
+  'Authorization': `Bearer ${user_login_Access_Token}`,
+}},)
+
+const responseOutputDUC1=JSON.parse(signUtilization1.body)
+console.log("sign utilization sign",responseOutputDUC1)
+signTrxnIdUser(duaSignTrxId,user_login_Access_Token)
+
+
+
+}
+
+
+
+
+

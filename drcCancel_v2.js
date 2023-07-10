@@ -31,11 +31,11 @@ const officer_kda_registrar="KDAOFSR00384"
 const officer_tdr_notice_manager="KDAOFSR00385" //shubham
 const officer_TDR_APPLICATION_VERIFIER ="KDAOFSR00386" //anurag
 const officer_TDR_APPLICATION_SUB_VERIFIER ="KDAOFSR00388"  //ankit
-const officer_TDR_APPLICATION_SUB_VERIFIER1 ="KDAOFSR00462" 
-const officer_TDR_APPLICATION_SUB_VERIFIER2 ="KDAOFSR00478" 
-const officer_TDR_APPLICATION_SUB_VERIFIER3 ="KDAOFSR00479" 
-const officer_TDR_APPLICATION_SUB_VERIFIER4 ="KDAOFSR00480" 
-const officer_TDR_APPLICATION_SUB_VERIFIER5 ="KDAOFSR00467" 
+const officer_TDR_APPLICATION_SUB_VERIFIER1 ="KDAOFSR00517" 
+const officer_TDR_APPLICATION_SUB_VERIFIER2 ="KDAOFSR00518" 
+const officer_TDR_APPLICATION_SUB_VERIFIER3 ="KDAOFSR00519" 
+const officer_TDR_APPLICATION_SUB_VERIFIER4 ="KDAOFSR00520" 
+const officer_TDR_APPLICATION_SUB_VERIFIER5 ="KDAOFSR00521" 
 const officer_Chief_planner="KDAOFSR00389"
 const officer_Chief_engineer="KDAOFSR00392"
 const officerDM="KDAOFSR00393" 
@@ -165,12 +165,12 @@ export default function() {
 
       
            // function to add officers
-        const addOfficersInfo =async (userId,designation,access_token) => {
+        const addOfficersInfo =async (userId,designation,department,access_token) => {
 
           const officerloginTrxID=http.post(`${KdaUrl}/kda/admin/addOfficer`, JSON.stringify({
             userId: userId,
             designation: `${designation}`,
-            department: "land",
+            department: department,
             zones:[1]
           }), {
           headers: {
@@ -221,13 +221,12 @@ export default function() {
 const login_Access_Token_VC_role = officerLogin(KDAofficerId);
 console.log("login_Access_Token_VC_role",login_Access_Token_VC_role)
 
-addOfficersInfo(officer_TDR_APPLICATION_SUB_VERIFIER ,"SUB_VERIFIER",login_Access_Token_VC_role)
-addOfficersInfo(officer_TDR_APPLICATION_SUB_VERIFIER1 ,"SUB_VERIFIER",login_Access_Token_VC_role)
-addOfficersInfo(officer_TDR_APPLICATION_SUB_VERIFIER2 ,"SUB_VERIFIER",login_Access_Token_VC_role)
-addOfficersInfo(officer_TDR_APPLICATION_SUB_VERIFIER3 ,"SUB_VERIFIER",login_Access_Token_VC_role)
-addOfficersInfo(officer_TDR_APPLICATION_SUB_VERIFIER4 ,"SUB_VERIFIER",login_Access_Token_VC_role)
-addOfficersInfo(officer_TDR_APPLICATION_SUB_VERIFIER5 ,"SUB_VERIFIER",login_Access_Token_VC_role)
-
+// addOfficersInfo(officer_TDR_APPLICATION_SUB_VERIFIER ,"SUB_VERIFIER","LAND",login_Access_Token_VC_role)
+// addOfficersInfo(officer_TDR_APPLICATION_SUB_VERIFIER1 ,"SUB_VERIFIER","PLANNING",login_Access_Token_VC_role)
+// addOfficersInfo(officer_TDR_APPLICATION_SUB_VERIFIER2 ,"SUB_VERIFIER","ENGINEERING",login_Access_Token_VC_role)
+// addOfficersInfo(officer_TDR_APPLICATION_SUB_VERIFIER3 ,"SUB_VERIFIER","PROPERTY",login_Access_Token_VC_role)
+// addOfficersInfo(officer_TDR_APPLICATION_SUB_VERIFIER4 ,"SUB_VERIFIER","SALE",login_Access_Token_VC_role)
+// addOfficersInfo(officer_TDR_APPLICATION_SUB_VERIFIER5 ,"SUB_VERIFIER","LEGAL",login_Access_Token_VC_role)
 
 // const adduserManagerInfo=addOfficersInfo(officer_USER_MANAGER,"NONE",login_Access_Token_VC_role)
 
@@ -325,7 +324,7 @@ const setDTA_VERIFIERRole=setRole(officer_DTA_verifier,"DTA_VERIFIER",login_Acce
      const adminCreateTdrNotice = http.post(`${KdaUrl}/tdr/notice/create`, JSON.stringify({
       notice: {
           locationInfo: {
-              khasraOrPlotNo: "12d3",
+              khasraOrPlotNo: "A123",
               scheme: "Kalyanpur",
               zone: 1,
               district: "Kanpur"
@@ -358,7 +357,7 @@ const setDTA_VERIFIERRole=setRole(officer_DTA_verifier,"DTA_VERIFIER",login_Acce
               }
           ],
           status: "PENDING",
-          propertyId: "Kanpur-Kalyanpur-124-1"
+          propertyId: "Kanpur-Kalyanpur-11-03"
       },
       documents: {
           order: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEA"
@@ -591,19 +590,23 @@ console.log("Application Approved")
     const myApplId=fetchAppReposne
 
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  
+    
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  
 
 // post to /tdr/application/issueDrc to issue new DRC
 
 const IssueDrcByVC = http.post(`${KdaUrl}/tdr/application/issueDrc`,  JSON.stringify({
-    applicationId: applicationIdByUser,
-    farGranted: 200
+  applicationId: applicationIdByUser,
+  farGranted: 200
 }), {
-  headers: {
-    'Content-Type': 'application/json',
-    'Authorization': `Bearer ${login_Access_officer_drcIssuer_role_main}`,
-  },
+headers: {
+  'Content-Type': 'application/json',
+  'Authorization': `Bearer ${login_Access_officer_drcIssuer_role_main}`,
+},
 });
 
 const IssueDrcResponse=JSON.parse(IssueDrcByVC.body)
@@ -611,178 +614,45 @@ const drcId=IssueDrcResponse.data.drcId
 console.log("drc isssued",IssueDrcResponse)
 
 signTrxnId(IssueDrcResponse.data.trxId,login_Access_officer_drcIssuer_role_main)
+   
 
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
-
-
-// post to /drc/application/transfer/create to issue new DRC
-
-// const transferDrcByUser = http.post(`${KdaUrl}/drc/application/transfer/create`,  JSON.stringify({
-//   dta: {
-//     drcId: drcId,
-//     farTransferred: 100,
-//     buyers: [
-//         "KDAUSER01116"
-//     ],
-//     status: "pending"
-// },
-// documents: {
-//     saleDeed: {
-//         file_type: "pdf",
-//         file_data: "JVBERi0xLjQKJ..."
-//     }
-// }
-// }), {
-//   headers: {
-//     'Content-Type': 'application/json',
-//     'Authorization': `Bearer ${user_login_Access_Token}`,
-//   },
-// });
-
-// const transferDrcResponse=JSON.parse(transferDrcByUser.body)
-// console.log("transferDrcResponse",transferDrcResponse.data)
-// signTrxnIdUser(transferDrcResponse.data.trxId,user_login_Access_Token)
-
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  
-
-//post to  drc/application/transfer/sign to sign application
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  
-
-
-//Utilixzation 
-
-//post to {{base_url}}/drc/application/utilization/create
-
-const createUtilization=http.post(`${KdaUrl}/drc/application/utilization/create`, JSON.stringify({
-    drcId:  drcId,
-    farUtilized: 100,
-    drcUtilizationDetails: {
-      landUse: "COMMERCIAL",
-      areaType: "BUILT",
-      roadWidth: 12,
-      purchasableFar: 2,
-      basicFar: 1,
-      circleRateUtilization: 70
-  },
-    locationInfo: {
-      khasraOrPlotNo: "1278",
-      villageOrWard: "Kalyanpur",
-      Tehsil: "Kalyanpur",
-      district: "Kanpur"
-    }
-  }), {
-    headers: {
-      'Content-Type': 'application/json',
-      'Authorization': `Bearer ${user_login_Access_Token}`,
-    },
-  });
-
-  console.log("create utilization appl",createUtilization.body)
-  const AppIdDUA=JSON.parse(createUtilization.body).data.applicationId
-  console.log(AppIdDUA)
-  const duaSignTrxId=JSON.parse(createUtilization.body).data.trxId
-
-  signTrxnIdUser(duaSignTrxId,user_login_Access_Token)
-
-
-//post to {{base_url}}/drc/application/utilization/sign
-
-const signUtilization1=http.post(`${KdaUrl}/drc/application/utilization/sign`, JSON.stringify({
-    applicationId:AppIdDUA
-
-}), {
-headers: {
-  'Content-Type': 'application/json',
-  'Authorization': `Bearer ${user_login_Access_Token}`,
-}},)
-
-const responseOutputDUC1=JSON.parse(signUtilization1.body)
-console.log("sign utilization sign",responseOutputDUC1)
-signTrxnIdUser(duaSignTrxId,user_login_Access_Token)
-
-
-const signUtilization2=http.post(`${KdaUrl}/drc/application/utilization/sign`, JSON.stringify({
-  applicationId:AppIdDUA
-}), {
-headers: {
-  'Content-Type': 'application/json',
-  'Authorization': `Bearer ${user_login_Access_Token1}`,
-}},)
-const responseOutputDUC2=JSON.parse(signUtilization2.body)
-console.log("sign utilization sign",responseOutputDUC2)
-
-
-const signUtilization3=http.post(`${KdaUrl}/drc/application/utilization/sign`, JSON.stringify({
-  applicationId:AppIdDUA
-}), {
-headers: {
-  'Content-Type': 'application/json',
-  'Authorization': `Bearer ${user_login_Access_Token2}`,
-}},)
-
-const responseOutputDUC3=JSON.parse(signUtilization3.body)
-console.log("sign utilization sign",responseOutputDUC3)
-
-
-const signUtilization4=http.post(`${KdaUrl}/drc/application/utilization/sign`, JSON.stringify({
-  applicationId:AppIdDUA
-}), {
-headers: {
-  'Content-Type': 'application/json',
-  'Authorization': `Bearer ${user_login_Access_Token3}`,
-}},)
-
-const responseOutputDUC4=JSON.parse(signUtilization4.body)
-console.log("sign utilization sign",responseOutputDUC4)
-
-}
-
-
-
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////
 
 
 // drc cancellation flow
-
-
-
-
-
-
-
-
-
-// {
-//   "name": "Shubham Kunwar",
-//   "password": "Rabbit@1234",
-//   "soOrWoName": "so",
-//   "dob": "10/10/1998",
-//   "gender": "MALE",
-//   "mobileNumber": "9876543210",
-//   "email": "rabbit123@gmail.com",
-//   "photo": "123213",
-//   "address": {
-//       "address": "lapata ganj",
-//       "city": "Mumbai",
-//       "state": "gumnnaan",
-//       "pincode": 123123,
-//       "country": "India"
-//   }
-
-// }
-
-
-// {
-//   "success": true,
-//   "data": {
-//       "userId": "KDAOFSR00061"
-//   }
-// }
+    
+    //post to  /drc/cancel
+    
+    const startDrcCancel = http.post(`${KdaUrl}/drc/cancel/start`,  JSON.stringify({
+        drcId:drcId,
+        notice:"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEA"
+    }), {
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${login_Access_Token_VC_role}`,
+      },
+    });
+    
+    const RejectDrcResponseStart=JSON.parse(startDrcCancel.body)
+    console.log("Start DRC Cancel",RejectDrcResponseStart)
+    
+    
+    const RejectDrcByVC = http.post(`${KdaUrl}/drc/cancel`,  JSON.stringify({
+      drcId: drcId,
+      cancellationOrder:"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEA"
+    }), {
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${login_Access_Token_VC_role}`,
+      },
+    });
+    
+    const RejectDrcResponse=RejectDrcByVC.body
+    console.log("reject drc response",RejectDrcResponse)    
+    
+    
+    
+}
+    
+    

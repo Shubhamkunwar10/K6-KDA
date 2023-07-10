@@ -2,16 +2,17 @@ import http from 'k6/http';
 import { sleep } from 'k6';
 import { randomString, randomItem, randomIntBetween, uuidv4 } from 'https://jslib.k6.io/k6-utils/1.2.0/index.js';
 
-const officerPassword="Rabbit@1234"
+const officerPassword="somePassword1="
 const device_id = "5678-5678-5678-1234"
 const user_login_Access_Token="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0eXBlIjoiQUNDRVNTIFRPS0VOIiwiaWQiOiJLREFVU0VSMDAxODkiLCJ1c2VybmFtZSI6ImNtMmYycCIsInJvbGUiOiJVU0VSIiwidXNlcl90eXBlIjoiVVNFUiIsImV4cCI6MTY4NDQwNTM0MiwiaWF0IjoxNjg0MzE4OTQyLCJ0b2tlbl9pZCI6ImY5NDhhMWI3LTc2NGUtNGUzMi05OWY3LWNjMjFkNDhkYTNiYyJ9.XoxFVzm_NuEebQyihMq472_Agd-G07YiCjsFE72LeYY"
 
 export let options = {
   vus: 1, // Virtual users
-  duration: "80s"
+  duration: "120s"
 };
 
 const KdaUrl = "https://api-kda-dev.c3ihub.org"
+// const KdaUrl = "https://api-kda-staging.c3ihub.org"
 
 const soOrWoNames = ['so', 'wo'];
 const genders = ['MALE', 'FEMALE',];
@@ -19,71 +20,18 @@ const org = ['ORGANIZATION', 'CITIZEN',];
 
 
 // Generate a random user object
-function generateUser() {
-  let name = Math.random().toString(36).substring(7);
-  let soOrWoName = randomItem(soOrWoNames);
-  let dob = '01/01/1990';
-  let gender = randomItem(genders);
-  let registrationType = randomItem(org)
-  let mobileNumber = '9876543210';
-  let email = `${name}@example.com`;
-  let aadhaarNumber = Math.floor(100000000000 + Math.random() * 900000000000).toString().substring(0, 12);
-  let photo = Math.floor(Math.random() * 1000000).toString();
-  let address = {
-    address: 'lapata ganj',
-    city: 'Mumbai',
-    state: 'gumnnaan',
-    pincode: Math.floor(Math.random() * 900000) + 100000,
-    country: 'India',
-  };
-  let aadhaar = {
-    file_type: 'pdf',
-    file_data: 'JVBERi0xLjQKJ...',
-  };
-
-  return {
-    name,
-    soOrWoName,
-    dob,
-    gender,
-    registrationType,
-    mobileNumber,
-    email,
-    aadhaarNumber,
-    photo,
-    address,
-    aadhaar,
-  };
-}
-
 function generateOfficer() {
-  let name = Math.random().toString(36).substring(7);
-  let password ="Rabbit@1234";
-  let soOrWoName = randomItem(soOrWoNames);
-  let dob = '01/01/1990';
-  let gender = randomItem(genders);
-  let mobileNumber = '9876543210';
-  let email = `${name}@example.com`;
-  let photo = Math.floor(Math.random() * 1000000).toString();
-  let address = {
-    address: 'lapata ganj',
-    city: 'Mumbai',
-    state: 'gumnnaan',
-    pincode: Math.floor(Math.random() * 900000) + 100000,
-    country: 'India',
-  };
 
+  let name = Math.random().toString(36).substring(7);
+  let mobileNumber = '9876543210';
+  let email = `metaland6000@gmail.com`;
+  let password= "somePassword1="
 
   return {
     name,
     password,
-    soOrWoName,
-    dob,
-    gender,
     mobileNumber,
     email,
-    photo,
-    address,
   };
 }
 
@@ -91,7 +39,6 @@ function generateOfficer() {
 export default function () {
   
   // Generate a random user object
-  const user = generateUser();
   const officer = generateOfficer()
  
 
@@ -123,7 +70,7 @@ export default function () {
           const response =  http.post(`${KdaUrl}/auth/kda/login`, JSON.stringify({
             userId:officerID,
             deviceId:device_id,
-            password:officerPassword
+            password:"somePassword1="
       }), {
             headers: {
               'Content-Type': 'application/json',
