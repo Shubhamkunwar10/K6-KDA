@@ -1,0 +1,343 @@
+[{
+  "_id": "KDAOFSR00032",
+  "value": {
+    "name": "Ras Dwivedi",
+    "password": "somePassword1=",
+    "mobileNumber": "8950650695",
+    "email": "rasd.phd+36263326@gmail.com",
+    "jwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0eXBlIjoiQUNDRVNTIFRPS0VOIiwiaWQiOiJLREFPRlNSMDAwMzIiLCJ1c2VybmFtZSI6IlJhcyBEd2l2ZWRpIiwicm9sZSI6WyJVU0VSX01BTkFHRVIiLCJURFJfTk9USUNFX01BTkFHRVIiLCJURFJfQVBQTElDQVRJT05fVkVSSUZJRVIiLCJURFJfQVBQTElDQVRJT05fU1VCX1ZFUklGSUVSIiwiRFJDX0lTU1VFUiIsIkRUQV9WRVJJRklFUiIsIkRUQV9BUFBST1ZFUiIsIkRVQV9WRVJJRklFUiIsIkRVQV9BUFBST1ZFUiIsIkRSQ19NQU5BR0VSIiwiRFJDX0NBTkNFTExFUiIsIk5PTUlORUVfTUFOQUdFUiIsIkRPQ1VNRU5UX1ZFUklGSUVSIiwiUFJPSkVDVF9NQU5BR0VSIl0sInVzZXJfdHlwZSI6IktEQV9PRkZJQ0VSIiwiZXhwIjoxNjk0OTYyNjQzLCJpYXQiOjE2OTQ4NzYyNDMsInRva2VuX2lkIjoiOWFkNmEyMmEtZWZhYS00Nzk3LTgyMDItOGMyNjIwMGViMjRhIn0.zBgruW3Gm-KaPDYtpAZ1XPcY7WDKiy0VFc6BlSySIlM",
+    "designation": "VC",
+    "department": "ALL",
+    "zones": [
+      1,
+      2,
+      3,
+      4
+    ]
+  }
+},
+{
+  "_id": "KDAOFSR00033",
+  "value": {
+    "name": "Ras Dwivedi",
+    "password": "somePassword1=",
+    "mobileNumber": "8950650695",
+    "email": "rasd.phd+81025198@gmail.com",
+    "jwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0eXBlIjoiQUNDRVNTIFRPS0VOIiwiaWQiOiJLREFPRlNSMDAwMzMiLCJ1c2VybmFtZSI6IlJhcyBEd2l2ZWRpIiwicm9sZSI6WyJURFJfTk9USUNFX01BTkFHRVIiLCJQUk9KRUNUX01BTkFHRVIiXSwidXNlcl90eXBlIjoiS0RBX09GRklDRVIiLCJleHAiOjE2OTQ5NjIyMTksImlhdCI6MTY5NDg3NTgxOSwidG9rZW5faWQiOiIzNGUwNDAyZS03OTA5LTRkOGUtOWJjZC1iNzUzMTQzZDVkMjAifQ.6MT2WU7SAWJjvH8umJWddda-svUIqOlDWaoDWWGfGZc",
+    "designation": "DRAFTSMAN",
+    "department": "PLANNING",
+    "zones": [
+      1
+    ]
+  }
+},
+{
+  "_id": "KDAOFSR00034",
+  "value": {
+    "name": "Ras Dwivedi",
+    "password": "somePassword1=",
+    "mobileNumber": "8950650695",
+    "email": "rasd.phd+70395720@gmail.com",
+    "jwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0eXBlIjoiQUNDRVNTIFRPS0VOIiwiaWQiOiJLREFPRlNSMDAwMzQiLCJ1c2VybmFtZSI6IlJhcyBEd2l2ZWRpIiwicm9sZSI6WyJURFJfTk9USUNFX01BTkFHRVIiLCJQUk9KRUNUX01BTkFHRVIiXSwidXNlcl90eXBlIjoiS0RBX09GRklDRVIiLCJleHAiOjE2OTQ5NTQ4NzAsImlhdCI6MTY5NDg2ODQ3MCwidG9rZW5faWQiOiJhNjA1ZjNjZS1mMTcwLTQ5Y2EtODExNC1iZDE5NGQ3MzMzNTEifQ.pHXp5iXGrb11Uh01jDkNgAG6PKqWULm40vQNg-AuTxY",
+    "designation": "EXECUTIVE_ENGINEER",
+    "department": "PLANNING",
+    "zones": [
+      1
+    ]
+  }
+},
+{
+  "_id": "KDAOFSR00035",
+  "value": {
+    "name": "Ras Dwivedi",
+    "password": "somePassword1=",
+    "mobileNumber": "8950650695",
+    "email": "rasd.phd+99739949@gmail.com",
+    "jwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0eXBlIjoiQUNDRVNTIFRPS0VOIiwiaWQiOiJLREFPRlNSMDAwMzUiLCJ1c2VybmFtZSI6IlJhcyBEd2l2ZWRpIiwicm9sZSI6WyJURFJfTk9USUNFX01BTkFHRVIiLCJURFJfQVBQTElDQVRJT05fVkVSSUZJRVIiLCJEVUFfVkVSSUZJRVIiLCJEVUFfQVBQUk9WRVIiLCJQUk9KRUNUX01BTkFHRVIiXSwidXNlcl90eXBlIjoiS0RBX09GRklDRVIiLCJleHAiOjE2OTQ5NjI1OTgsImlhdCI6MTY5NDg3NjE5OCwidG9rZW5faWQiOiJlMmZjNGRhNy1hMDc1LTQ0MDgtYTU5MC1iYjBhNGMwYmYwNmQifQ.0AqIdfQNQO-LrqX6LqCTOj8sYcKIo8UbCiexbNZRjHo",
+    "designation": "TOWN_PLANNER",
+    "department": "PLANNING",
+    "zones": [
+      1
+    ]
+  }
+},
+{
+  "_id": "KDAOFSR00036",
+  "value": {
+    "name": "Ras Dwivedi",
+    "password": "somePassword1=",
+    "mobileNumber": "8950650695",
+    "email": "rasd.phd+43329862@gmail.com",
+    "jwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0eXBlIjoiQUNDRVNTIFRPS0VOIiwiaWQiOiJLREFPRlNSMDAwMzYiLCJ1c2VybmFtZSI6IlJhcyBEd2l2ZWRpIiwicm9sZSI6WyJURFJfTk9USUNFX01BTkFHRVIiXSwidXNlcl90eXBlIjoiS0RBX09GRklDRVIiLCJleHAiOjE2OTQ5NjIxNTgsImlhdCI6MTY5NDg3NTc1OCwidG9rZW5faWQiOiI4MDM4ZDI5Mi0xMTlkLTRmODAtYmU5OC0wOTgxYzk1NmNlODgifQ.W2emup_LAZKBvsj0cd5xrC0qCULrIkQOL0VGbX9fjPc",
+    "designation": "AMEEN",
+    "department": "LAND",
+    "zones": [
+      1
+    ]
+  }
+},
+{
+  "_id": "KDAOFSR00037",
+  "value": {
+    "name": "Ras Dwivedi",
+    "password": "somePassword1=",
+    "mobileNumber": "8950650695",
+    "email": "rasd.phd+47472840@gmail.com",
+    "jwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0eXBlIjoiQUNDRVNTIFRPS0VOIiwiaWQiOiJLREFPRlNSMDAwMzciLCJ1c2VybmFtZSI6IlJhcyBEd2l2ZWRpIiwicm9sZSI6WyJURFJfTk9USUNFX01BTkFHRVIiXSwidXNlcl90eXBlIjoiS0RBX09GRklDRVIiLCJleHAiOjE2OTQ5NjIxODUsImlhdCI6MTY5NDg3NTc4NSwidG9rZW5faWQiOiJkM2YyMWYzZC00Yjk0LTQxMjUtOGMwYS04YWVlNTc3ZDRiNTIifQ.AnP8hRJc3HNfxIn9tfN-n9z7qZCK4jFt-xe1q_a2xe8",
+    "designation": "TEHSILDAR",
+    "department": "LAND",
+    "zones": [
+      1
+    ]
+  }
+},
+{
+  "_id": "KDAOFSR00038",
+  "value": {
+    "name": "Ras Dwivedi",
+    "password": "somePassword1=",
+    "mobileNumber": "8950650695",
+    "email": "rasd.phd+13353785@gmail.com",
+    "jwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0eXBlIjoiQUNDRVNTIFRPS0VOIiwiaWQiOiJLREFPRlNSMDAwMzgiLCJ1c2VybmFtZSI6IlJhcyBEd2l2ZWRpIiwicm9sZSI6WyJURFJfTk9USUNFX01BTkFHRVIiXSwidXNlcl90eXBlIjoiS0RBX09GRklDRVIiLCJleHAiOjE2OTQ5NjIyMDEsImlhdCI6MTY5NDg3NTgwMSwidG9rZW5faWQiOiJjZWZjZTY2MC1kYTI3LTQ0MGQtODA1My03ZDlhNDE1NWViMzQifQ.qospU3YiOot44hn--_-MN0452oqD85gjswwZph5rPQA",
+    "designation": "OSD",
+    "department": "LAND",
+    "zones": [
+      1
+    ]
+  }
+},
+{
+  "_id": "KDAOFSR00039",
+  "value": {
+    "name": "Ras Dwivedi",
+    "password": "somePassword1=",
+    "mobileNumber": "8950650695",
+    "email": "rasd.phd+30156571@gmail.com",
+    "jwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0eXBlIjoiQUNDRVNTIFRPS0VOIiwiaWQiOiJLREFPRlNSMDAwMzkiLCJ1c2VybmFtZSI6IlJhcyBEd2l2ZWRpIiwicm9sZSI6WyJURFJfTk9USUNFX01BTkFHRVIiXSwidXNlcl90eXBlIjoiS0RBX09GRklDRVIiLCJleHAiOjE2OTQ5NjIyMzQsImlhdCI6MTY5NDg3NTgzNCwidG9rZW5faWQiOiJmNjJhZWU1Yy02ODg2LTQ1NDQtYjIwNy0yMjM1ZjlhYjllMGUifQ.P2rO2OvdW5nHqzFRcWRogRxt3AQJHr4uA8nmp8poTsM",
+    "designation": "ASSISTANT_ENGINEER",
+    "department": "PLANNING",
+    "zones": [
+      1
+    ]
+  }
+},
+{
+  "_id": "KDAOFSR00040",
+  "value": {
+    "name": "Ras Dwivedi",
+    "password": "somePassword1=",
+    "mobileNumber": "8950650695",
+    "email": "rasd.phd+69352256@gmail.com",
+    "jwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0eXBlIjoiQUNDRVNTIFRPS0VOIiwiaWQiOiJLREFPRlNSMDAwNDAiLCJ1c2VybmFtZSI6IlJhcyBEd2l2ZWRpIiwicm9sZSI6WyJURFJfTk9USUNFX01BTkFHRVIiXSwidXNlcl90eXBlIjoiS0RBX09GRklDRVIiLCJleHAiOjE2OTQ5NjIyNTIsImlhdCI6MTY5NDg3NTg1MiwidG9rZW5faWQiOiJjZmE4NDdjYS0yNjdmLTRjODgtOWVmZC1hZGMxNTc0MDliOGIifQ.HZXb3jLQOtyKY7XdfCelL6LbcvriVW9B4di_dc8OQgU",
+    "designation": "JUNIOR_ENGINEER",
+    "department": "PLANNING",
+    "zones": [
+      1
+    ]
+  }
+},
+{
+  "_id": "KDAOFSR00041",
+  "value": {
+    "name": "Ras Dwivedi",
+    "password": "somePassword1=",
+    "mobileNumber": "8950650695",
+    "email": "rasd.phd+65985303@gmail.com",
+    "jwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0eXBlIjoiQUNDRVNTIFRPS0VOIiwiaWQiOiJLREFPRlNSMDAwNDEiLCJ1c2VybmFtZSI6IlJhcyBEd2l2ZWRpIiwicm9sZSI6WyJURFJfQVBQTElDQVRJT05fVkVSSUZJRVIiLCJEVUFfVkVSSUZJRVIiLCJEVEFfVkVSSUZJRVIiXSwidXNlcl90eXBlIjoiS0RBX09GRklDRVIiLCJleHAiOjE2OTQ5NjIzMjcsImlhdCI6MTY5NDg3NTkyNywidG9rZW5faWQiOiJmMTY5YjNiOC02YzVkLTRmMjctODllOS03YmJhNGZhYWU2YzAifQ.XBRr4xcEsK6SEg7DwoJOCTElQsB6xAx2DDXttJFp6Fk",
+    "designation": "L2",
+    "department": "LAND",
+    "zones": [
+      1
+    ]
+  }
+},
+{
+  "_id": "KDAOFSR00042",
+  "value": {
+    "name": "Ras Dwivedi",
+    "password": "somePassword1=",
+    "mobileNumber": "8950650695",
+    "email": "rasd.phd+13948365@gmail.com",
+    "jwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0eXBlIjoiQUNDRVNTIFRPS0VOIiwiaWQiOiJLREFPRlNSMDAwNDIiLCJ1c2VybmFtZSI6IlJhcyBEd2l2ZWRpIiwicm9sZSI6WyJURFJfQVBQTElDQVRJT05fVkVSSUZJRVIiLCJEVUFfVkVSSUZJRVIiLCJEVEFfVkVSSUZJRVIiLCJEUkNfSVNTVUVSIl0sInVzZXJfdHlwZSI6IktEQV9PRkZJQ0VSIiwiZXhwIjoxNjk0OTYyMzQ2LCJpYXQiOjE2OTQ4NzU5NDYsInRva2VuX2lkIjoiMWQyMjJhMmMtOGFhMi00MWE3LTkxOTctZWEzOTBmZDFlOGQyIn0.4sB8MwOdTHj5afpZpXAuNPkIzbU1YbSSleH8uP6JjTY",
+    "designation": "L3",
+    "department": "LAND",
+    "zones": [
+      1
+    ]
+  }
+},
+{
+  "_id": "KDAOFSR00043",
+  "value": {
+    "name": "Ras Dwivedi",
+    "password": "somePassword1=",
+    "mobileNumber": "8950650695",
+    "email": "rasd.phd+96635252@gmail.com",
+    "jwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0eXBlIjoiQUNDRVNTIFRPS0VOIiwiaWQiOiJLREFPRlNSMDAwNDMiLCJ1c2VybmFtZSI6IlJhcyBEd2l2ZWRpIiwicm9sZSI6WyJURFJfQVBQTElDQVRJT05fVkVSSUZJRVIiLCJEVUFfVkVSSUZJRVIiLCJEVEFfVkVSSUZJRVIiXSwidXNlcl90eXBlIjoiS0RBX09GRklDRVIiLCJleHAiOjE2OTQ5NjI1NjQsImlhdCI6MTY5NDg3NjE2NCwidG9rZW5faWQiOiI2YzM2Yzk4Yi1lYjM0LTQ2M2EtYmU0Mi0yYmJmZjVjOTEwMzIifQ.o_4O3FaFM0PH7hwJK8Er8o-olHTKH8LNE-ENf3KfGgU",
+    "designation": "L1",
+    "department": "PLANNING",
+    "zones": [
+      1
+    ]
+  }
+},
+{
+  "_id": "KDAOFSR00044",
+  "value": {
+    "name": "Ras Dwivedi",
+    "password": "somePassword1=",
+    "mobileNumber": "8950650695",
+    "email": "rasd.phd+74508016@gmail.com",
+    "jwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0eXBlIjoiQUNDRVNTIFRPS0VOIiwiaWQiOiJLREFPRlNSMDAwNDQiLCJ1c2VybmFtZSI6IlJhcyBEd2l2ZWRpIiwicm9sZSI6WyJURFJfQVBQTElDQVRJT05fVkVSSUZJRVIiLCJEVUFfVkVSSUZJRVIiLCJEVEFfVkVSSUZJRVIiXSwidXNlcl90eXBlIjoiS0RBX09GRklDRVIiLCJleHAiOjE2OTQ5NjI1ODAsImlhdCI6MTY5NDg3NjE4MCwidG9rZW5faWQiOiJiMWMwODgxZi1jMzIyLTRmZTMtODVjMC0wNzEwNDc0MzYzY2QifQ.ZwrOsMZl7CcvGa0BWTspHZujaNFkl902CM_f-D6-fWA",
+    "designation": "L2",
+    "department": "PLANNING",
+    "zones": [
+      1
+    ]
+  }
+},
+{
+  "_id": "KDAOFSR00045",
+  "value": {
+    "name": "Ras Dwivedi",
+    "password": "somePassword1=",
+    "mobileNumber": "8950650695",
+    "email": "rasd.phd+28237293@gmail.com",
+    "jwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0eXBlIjoiQUNDRVNTIFRPS0VOIiwiaWQiOiJLREFPRlNSMDAwNDUiLCJ1c2VybmFtZSI6IlJhcyBEd2l2ZWRpIiwicm9sZSI6WyJURFJfQVBQTElDQVRJT05fVkVSSUZJRVIiLCJEVUFfVkVSSUZJRVIiLCJEVEFfVkVSSUZJRVIiLCJEUkNfSVNTVUVSIl0sInVzZXJfdHlwZSI6IktEQV9PRkZJQ0VSIiwiZXhwIjoxNjk0OTYyNDAwLCJpYXQiOjE2OTQ4NzYwMDAsInRva2VuX2lkIjoiN2YyNzI5OWEtZDQxMy00ZjBjLTljYWMtMTc3MzYwZGY1NmUxIn0.BkBKuU3PvlO7LVMnyYdBBRaepWGQTdlkRrUp0NK91fs",
+    "designation": "L3",
+    "department": "PLANNING",
+    "zones": [
+      1
+    ]
+  }
+},
+{
+  "_id": "KDAOFSR00046",
+  "value": {
+    "name": "Ras Dwivedi",
+    "password": "somePassword1=",
+    "mobileNumber": "8950650695",
+    "email": "rasd.phd+37090213@gmail.com",
+    "jwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0eXBlIjoiQUNDRVNTIFRPS0VOIiwiaWQiOiJLREFPRlNSMDAwNDYiLCJ1c2VybmFtZSI6IlJhcyBEd2l2ZWRpIiwicm9sZSI6WyJURFJfTk9USUNFX01BTkFHRVIiLCJURFJfQVBQTElDQVRJT05fVkVSSUZJRVIiLCJURFJfQVBQTElDQVRJT05fQVBQUk9WRVIiLCJEVUFfVkVSSUZJRVIiLCJEVUFfQVBQUk9WRVIiLCJQUk9KRUNUX01BTkFHRVIiLCJURFJfQVBQTElDQVRJT05fQVBQUk9WRVJfQ0hJRUZfVE9XTl9QTEFOTkVSIl0sInVzZXJfdHlwZSI6IktEQV9PRkZJQ0VSIiwiZXhwIjoxNjk0OTYyNDM2LCJpYXQiOjE2OTQ4NzYwMzYsInRva2VuX2lkIjoiYTk3YmUxNzYtYzU3NC00YWMzLWJhYzEtMWU0NDZjNjA4ZjRiIn0.HVzwmeyKSG04kC9UleHpCyvALafvp0lmXJYjZPbPcSU",
+    "designation": "CHIEF_TOWN_PLANNER",
+    "department": "PLANNING",
+    "zones": [
+      1
+    ]
+  }
+},
+{
+  "_id": "KDAOFSR00047",
+  "value": {
+    "name": "Ras Dwivedi",
+    "password": "somePassword1=",
+    "mobileNumber": "8950650695",
+    "email": "rasd.phd+4143921@gmail.com",
+    "jwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0eXBlIjoiQUNDRVNTIFRPS0VOIiwiaWQiOiJLREFPRlNSMDAwNDciLCJ1c2VybmFtZSI6IlJhcyBEd2l2ZWRpIiwicm9sZSI6WyJURFJfQVBQTElDQVRJT05fQVBQUk9WRVJfQ0hJRUZfVE9XTl9BTkRfQ09VTlRSWV9QTEFOTkVSIl0sInVzZXJfdHlwZSI6IktEQV9PRkZJQ0VSIiwiZXhwIjoxNjk0OTYyNDU0LCJpYXQiOjE2OTQ4NzYwNTQsInRva2VuX2lkIjoiNmJkNzI3MDEtYjYyNC00M2E4LTg4YjgtZWJiOTFkOTk2NGRmIn0._KN5Uhci-zoVKSO14NsGdmfznU7FKA83fFh0XZyy_Xc",
+    "designation": "CHIEF_TOWN_AND_COUNTRY_PLANNER",
+    "department": "NONE",
+    "zones": [
+      1
+    ]
+  }
+},
+{
+  "_id": "KDAOFSR00048",
+  "value": {
+    "name": "Ras Dwivedi",
+    "password": "somePassword1=",
+    "mobileNumber": "8950650695",
+    "email": "rasd.phd+67275919@gmail.com",
+    "jwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0eXBlIjoiQUNDRVNTIFRPS0VOIiwiaWQiOiJLREFPRlNSMDAwNDgiLCJ1c2VybmFtZSI6IlJhcyBEd2l2ZWRpIiwicm9sZSI6WyJURFJfQVBQTElDQVRJT05fQVBQUk9WRVJfQ0hJRUZfRU5HSU5FRVIiXSwidXNlcl90eXBlIjoiS0RBX09GRklDRVIiLCJleHAiOjE2OTQ5NjI0NzIsImlhdCI6MTY5NDg3NjA3MiwidG9rZW5faWQiOiIyNGIwMzJiYy1hMzEyLTRjNjgtOTA5NC0zMjM3ZTcxODY4ZTUifQ.dAjCFxghzEWs7skaTVMjDKvQ3FYx1ycq2Hhg0rIWQtE",
+    "designation": "CHIEF_ENGINEER",
+    "department": "ALL",
+    "zones": [
+      1
+    ]
+  }
+},
+{
+  "_id": "KDAOFSR00049",
+  "value": {
+    "name": "Ras Dwivedi",
+    "password": "somePassword1=",
+    "mobileNumber": "8950650695",
+    "email": "rasd.phd+96658492@gmail.com",
+    "jwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0eXBlIjoiQUNDRVNTIFRPS0VOIiwiaWQiOiJLREFPRlNSMDAwNDkiLCJ1c2VybmFtZSI6IlJhcyBEd2l2ZWRpIiwicm9sZSI6WyJURFJfQVBQTElDQVRJT05fQVBQUk9WRVJfRE0iXSwidXNlcl90eXBlIjoiS0RBX09GRklDRVIiLCJleHAiOjE2OTQ5NjI0OTAsImlhdCI6MTY5NDg3NjA5MCwidG9rZW5faWQiOiI3Yzg5MzljNS03YzkwLTQ0MWQtYjNkMC0wZDM1YmI0OGI5ZWMifQ._9SKgEo45z2yxuebD1x7RYek3dcXqtUgwJZietWQI6o",
+    "designation": "DM",
+    "department": "NONE",
+    "zones": [
+      1
+    ]
+  }
+},
+{
+  "_id": "KDAOFSR00050",
+  "value": {
+    "name": "Ras Dwivedi",
+    "password": "somePassword1=",
+    "mobileNumber": "8950650695",
+    "email": "rasd.phd+10410224@gmail.com",
+    "jwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0eXBlIjoiQUNDRVNTIFRPS0VOIiwiaWQiOiJLREFPRlNSMDAwNTAiLCJ1c2VybmFtZSI6IlJhcyBEd2l2ZWRpIiwicm9sZSI6WyJVU0VSX01BTkFHRVIiLCJURFJfTk9USUNFX01BTkFHRVIiLCJURFJfQVBQTElDQVRJT05fVkVSSUZJRVIiLCJURFJfQVBQTElDQVRJT05fU1VCX1ZFUklGSUVSIiwiRFJDX0lTU1VFUiIsIkRUQV9WRVJJRklFUiIsIkRUQV9BUFBST1ZFUiIsIkRVQV9WRVJJRklFUiIsIkRVQV9BUFBST1ZFUiIsIkRSQ19NQU5BR0VSIiwiRFJDX0NBTkNFTExFUiIsIk5PTUlORUVfTUFOQUdFUiIsIkRPQ1VNRU5UX1ZFUklGSUVSIiwiUFJPSkVDVF9NQU5BR0VSIl0sInVzZXJfdHlwZSI6IktEQV9PRkZJQ0VSIiwiZXhwIjoxNjk0OTYyNjEzLCJpYXQiOjE2OTQ4NzYyMTMsInRva2VuX2lkIjoiYzI4ODRmZTItNWE0Ny00MmRlLTg2YjQtYWQ5NDFkOWY1ZTE1In0.hHVze2KHqu2kyMFzB1XDxEmu2APxRF5fcaaxNOJosx0",
+    "designation": "ADDITIONAL_SECRETARY",
+    "department": "ALL",
+    "zones": [
+      1
+    ]
+  }
+},
+{
+  "_id": "KDAOFSR00051",
+  "value": {
+    "name": "Ras Dwivedi",
+    "password": "somePassword1=",
+    "mobileNumber": "8950650695",
+    "email": "rasd.phd+2325379@gmail.com",
+    "jwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0eXBlIjoiQUNDRVNTIFRPS0VOIiwiaWQiOiJLREFPRlNSMDAwNTEiLCJ1c2VybmFtZSI6IlJhcyBEd2l2ZWRpIiwicm9sZSI6WyJVU0VSX01BTkFHRVIiLCJURFJfTk9USUNFX01BTkFHRVIiLCJURFJfQVBQTElDQVRJT05fVkVSSUZJRVIiLCJURFJfQVBQTElDQVRJT05fU1VCX1ZFUklGSUVSIiwiRFJDX0lTU1VFUiIsIkRUQV9WRVJJRklFUiIsIkRUQV9BUFBST1ZFUiIsIkRVQV9WRVJJRklFUiIsIkRVQV9BUFBST1ZFUiIsIkRSQ19NQU5BR0VSIiwiRFJDX0NBTkNFTExFUiIsIk5PTUlORUVfTUFOQUdFUiIsIkRPQ1VNRU5UX1ZFUklGSUVSIiwiUFJPSkVDVF9NQU5BR0VSIl0sInVzZXJfdHlwZSI6IktEQV9PRkZJQ0VSIiwiZXhwIjoxNjk0OTYyNjI4LCJpYXQiOjE2OTQ4NzYyMjgsInRva2VuX2lkIjoiODY2MmZkMzQtN2E2Ny00MmFkLTgxMzktZDJkNjMzNTE0ZGI4In0.TYqUaRIaQC9CG2gqu1-hWSEeCx054JgR_0batNrBMUY",
+    "designation": "SECRETARY",
+    "department": "ALL",
+    "zones": [
+      1
+    ]
+  }
+},
+{
+  "_id": "KDAOFSR00052",
+  "value": {
+    "name": "Ras Dwivedi",
+    "password": "somePassword1=",
+    "mobileNumber": "8950650695",
+    "email": "rasd.phd+67901196@gmail.com",
+    "jwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0eXBlIjoiQUNDRVNTIFRPS0VOIiwiaWQiOiJLREFPRlNSMDAwNTIiLCJ1c2VybmFtZSI6IlJhcyBEd2l2ZWRpIiwicm9sZSI6WyJURFJfQVBQTElDQVRJT05fVkVSSUZJRVIiLCJEVUFfVkVSSUZJRVIiLCJEVEFfVkVSSUZJRVIiXSwidXNlcl90eXBlIjoiS0RBX09GRklDRVIiLCJleHAiOjE2OTQ5NjIzMTIsImlhdCI6MTY5NDg3NTkxMiwidG9rZW5faWQiOiI3YjcwNDdmNi1hYmNkLTRiZDktYWMwOS02OWZkY2M2ZmI0MDkifQ.lR5jA2wLWmju5Wj_4OU7DTYgm-0DCCc35DYWGvTo92s",
+    "designation": "L1_LAND",
+    "department": "LAND",
+    "zones": [
+      1
+    ]
+  }
+},
+{
+  "_id": "KDAUSER00005",
+  "value": {
+    "name": "Ras Dwivedi",
+    "soOrWoName": "so",
+    "dob": "02/02/1979",
+    "gender": "MALE",
+    "registrationType": "COMPANY",
+    "mobileNumber": "8950650695",
+    "email": "rasd.phd@gmail.com",
+    "aadhaarNumber": "444999091817",
+    "photo": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEA",
+    "notificationId": "2342432",
+    "designation": "KDA_USER",
+    "address": {
+      "address": "lapata ganj",
+      "city": "Mumbai",
+      "state": "gumnnaan",
+      "pincode": 123123,
+      "country": "India"
+    },
+    "aadhaar": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEA",
+    "jwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0eXBlIjoiQUNDRVNTIFRPS0VOIiwiaWQiOiJLREFVU0VSMDAwMDUiLCJ1c2VybmFtZSI6IlJhcyBEd2l2ZWRpIiwicm9sZSI6IlVTRVIiLCJ1c2VyX3R5cGUiOiJVU0VSIiwiZXhwIjoxNjk0OTYyNTU5LCJpYXQiOjE2OTQ4NzYxNTksInRva2VuX2lkIjoiYTRjM2EzZGMtMGU1Ny00ZmE3LTk0MmItMzZhNzk1NWE2MzcwIn0.O8wJcbN9yAeCrcNrR1Pji1P7q2-dUPM4Y9VOZVjguPM"
+  }
+}]

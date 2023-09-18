@@ -1,0 +1,234 @@
+
+
+project_flow_json = [
+    {
+        "designation": "DRAFTSMAN",
+        "department" : "PLANNING",
+        "action"     : "CREATE",
+        "file_status": "CREATED"
+    },
+    {
+        "designation": "EXECUTIVE_ENGINEER",
+        "department" : "PLANNING",
+        "action"     : "VERIFY",
+        "file_status": "VERIFIED"
+    },
+    {
+        "designation": "TOWN_PLANNER",
+        "department" : "PLANNING",
+        "action"     : "APPROVE",
+        "file_status": "APPROVED"
+    }
+]
+
+tdr_notice_flow_json= [
+    {
+        "designation": "AMEEN",
+        "department": "LAND",
+        "action": "CREATE",
+        "file_status": "CREATED"
+    },
+    {
+        "designation": "TEHSILDAR",
+        "department": "LAND",
+        "action": "VERIFY",
+        "file_status": "VERIFIED"
+    },
+    {
+        "designation": "OSD",
+        "department": "LAND",
+        "action": "APPROVE",
+        "file_status": "APPROVED_BY_LAND_DEPARTMENT"
+    },
+    {
+        "designation": "DRAFTSMAN",
+        "department": "PLANNING",
+        "action": "VERIFY",
+        "file_status": "VERIFIED"
+    },
+    {
+        "designation": "ASSISTANT_ENGINEER",
+        "department": "PLANNING",
+        "action": "VERIFY",
+        "file_status": "VERIFIED"
+    },
+    {
+        "designation": "JUNIOR_ENGINEER",
+        "department": "PLANNING",
+        "action": "VERIFY",
+        "file_status": "VERIFIED"
+    },
+    {
+        "designation": "TOWN_PLANNER",
+        "department": "PLANNING",
+        "action": "APPROVE",
+        "file_status": "ISSUED"
+    }
+]
+
+tdr_application_flow_json = [
+    {
+        "designation": "L1",
+        "department": "LAND",
+        "action": "VERIFY",
+        "file_status": "PENDING_VERIFICATION_BY_LAND"
+    },
+    {
+        "designation": "L2",
+        "department": "LAND",
+        "action": "FORWARD",
+        "file_status": "PENDING_VERIFICATION_BY_LAND"
+    },
+    {
+        "designation": "L3",
+        "department": "LAND",
+        "action": "FORWARD",
+        "file_status": "PENDING_VERIFICATION_BY_PLANNING"
+    },
+    {
+        "designation": "L1",
+        "department": "PLANNING",
+        "action": "VERIFY",
+        "file_status": "PENDING_VERIFICATION_BY_PLANNING"
+    },
+    {
+        "designation": "L2",
+        "department": "PLANNING",
+        "action": "FORWARD",
+        "file_status": "PENDING_VERIFICATION_BY_PLANNING"
+    },
+    {
+        "designation": "L3",
+        "department": "PLANNING",
+        "action": "FORWARD",
+        "file_status": "VERIFIED_BY_PLANNING"
+    },
+    {
+        "designation": "TOWN_PLANNER",
+        "department": "PLANNING",
+        "action": "FORWARD",
+        "file_status": "PENDING_FOR_COMMITTEE_RECOMMENDATION"
+    },
+    {
+        "designation": "CHIEF_TOWN_PLANNER",
+        "department": "PLANNING",
+        "action": "RECOMMEND",
+        "file_status": "PENDING_FOR_COMMITTEE_RECOMMENDATION"
+    },
+    {
+        "designation": "CHIEF_TOWN_AND_COUNTRY_PLANNER",
+        "department": "NONE",
+        "action": "RECOMMEND",
+        "file_status": "PENDING_FOR_COMMITTEE_RECOMMENDATION"
+    },
+    {
+        "designation": "CHIEF_ENGINEER",
+        "department": "ALL",
+        "action": "RECOMMEND",
+        "file_status": "PENDING_FOR_COMMITTEE_RECOMMENDATION"
+    },
+    {
+        "designation": "DM",
+        "department": "NONE",
+        "action": "RECOMMEND",
+        "file_status": "PENDING_FOR_COMMITTEE_RECOMMENDATION"
+    },
+    {
+        "designation": "ADDITIONAL_SECRETARY",
+        "department": "ALL",
+        "action": "FORWARD",
+        "file_status": "FORWARDED_TO_SECY"
+    },
+    {
+        "designation": "SECRETARY",
+        "department": "ALL",
+        "action": "FORWARD",
+        "file_status": "PENDING_FOR_VC_RECOMMENDATION"
+    },
+    {
+        "designation": "VC",
+        "department": "ALL",
+        "action": "ISSUE",
+        "file_status": "DRC_ISSUED"
+    }
+]
+
+legal_flow_json = [
+    {
+        "designation": "L1",
+        "department": "LEGAL",
+        "action": "VERIFY",
+        "file_status": "VERIFIED"
+    },
+    {
+        "designation": "L2",
+        "department": "LEGAL",
+        "action": "FORWARD",
+        "file_status": "PENDING_APPROVAL"
+    },
+    {
+        "designation": "L3",
+        "department": "LEGAL",
+        "action": "APPROVE",
+        "file_status": "APPROVED"
+    }
+]
+
+dta_flow_json = [
+    {
+        "designation": "L1",
+        "department": "LAND",
+        "action": "VERIFY",
+        "file_status": "VERIFIED"
+    },
+    {
+        "designation": "L2",
+        "department": "LAND",
+        "action": "FORWARD",
+        "file_status": "PENDING_APPROVAL"
+    },
+    {
+        "designation": "L3",
+        "department": "LAND",
+        "action": "APPROVE",
+        "file_status": "APPROVED"
+    }
+]
+dua_flow_json = [
+    {
+        "designation": "L1",
+        "department": "PLANNING",
+        "action": "VERIFY",
+        "file_status": "VERIFIED"
+    },
+    {
+        "designation": "L2",
+        "department": "PLANNING",
+        "action": "FORWARD",
+        "file_status": "PENDING_APPROVAL"
+    },
+    {
+        "designation": "TOWN_PLANNER",
+        "department": "PLANNING",
+        "action": "APPROVE",
+        "file_status": "APPROVED"
+    },
+    {
+        "designation": "ADDITIONAL_SECRETARY",
+        "department": "ALL",
+        "action": "FORWARD",
+        "file_status": "FORWARDED_TO_SECY"
+    },
+    {
+        "designation": "SECRETARY",
+        "department": "ALL",
+        "action": "FORWARD",
+        "file_status": "PENDING_FOR_VC_RECOMMENDATION"
+    },
+    {
+        "designation": "VC",
+        "department": "ALL",
+        "action": "ISSUE",
+        "file_status": "ISSUED"
+    }
+]

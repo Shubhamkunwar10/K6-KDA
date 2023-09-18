@@ -11,8 +11,8 @@ export let options = {
   duration: "120s"
 };
 
-const KdaUrl = "https://api-kda-dev.c3ihub.org"
-// const KdaUrl = "https://api-kda-staging.c3ihub.org"
+// const KdaUrl = "https://api-kda-dev.c3ihub.org"
+const KdaUrl = "https://api-kda-staging.c3ihub.org"
 
 const soOrWoNames = ['so', 'wo'];
 const genders = ['MALE', 'FEMALE',];

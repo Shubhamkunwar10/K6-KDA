@@ -12,17 +12,17 @@ export let options = {
   // duration: "50s"
 };
 
-// const KdaUrl = "https://api-kda-staging.c3ihub.org"
-const KdaUrl = "https://api-kda-dev.c3ihub.org"
+const KdaUrl = "https://api-kda-staging.c3ihub.org"
+// const KdaUrl = "https://api-kda-dev.c3ihub.org"
 
 const soOrWoNames = ['so', 'wo'];
 const genders = ['MALE', 'FEMALE',];
-const org = ['CITIZEN', 'CITIZEN',];
+const org = ['COMPANY', 'COMPANY',];
 
 
 // Generate a random user object
 function generateUser() {
-  let name = Math.random().toString(36).substring(7);
+  let name ="Shubham Kunwar";
   let soOrWoName = randomItem(soOrWoNames);
   let dob = '01/01/1990';
   let gender = randomItem(genders);

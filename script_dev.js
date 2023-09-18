@@ -12,13 +12,13 @@ const KdaUrl="https://api-kda-dev.c3ihub.org"
 const device_id="5678-5678-5678-1234"
 //for applicants on tdr/application/create
 
-const userRregistrationId="KDAUSER00676";  //942444562963
-const userRregistrationId3="KDAUSER00498"; //418337528042
+const userRregistrationId="KDAUSER00708";  //340656851366
+const userRregistrationId3="KDAUSER00709"; //488400053404
 
 const userNewPassword="Rabbit@12345"
 const loginOtpUser="1234565"
 
-const KDAofficerId="KDAOFSR01237" 
+const KDAofficerId="KDAOFSR01491" 
 const officerPassword="somePassword1="
 
 const officer_USER_MANAGER="KDAOFSR01352" //sahil
@@ -40,8 +40,8 @@ const officer_DTA_Approver="KDAOFSR01367"
 const officer_DRC_MANAGER ="KDAOFSR01368"
 const officer_NOMINEE_MANAGER ="KDAOFSR01369"
 
-const user_login_Access_Token="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0eXBlIjoiQUNDRVNTIFRPS0VOIiwiaWQiOiJLREFVU0VSMDA2NzYiLCJ1c2VybmFtZSI6ImJ0ZmkyNiIsInJvbGUiOiJVU0VSIiwidXNlcl90eXBlIjoiVVNFUiIsImV4cCI6MTY4NzU4OTU0NSwiaWF0IjoxNjg3NTAzMTQ1LCJ0b2tlbl9pZCI6IjgxM2U3OWMwLTY3ZTAtNDEyOS1hZWVjLTg4NWVmNzlmNWI1MyJ9.aBvS8gCesgstLdyCi_pozFzQWajTHxoX5R4f-2z4too"
-const user_login_Access_Token2=""
+const user_login_Access_Token="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0eXBlIjoiQUNDRVNTIFRPS0VOIiwiaWQiOiJLREFVU0VSMDA3MDgiLCJ1c2VybmFtZSI6Im9hemgzYSIsInJvbGUiOiJVU0VSIiwidXNlcl90eXBlIjoiVVNFUiIsImV4cCI6MTY5MTkwNjM4NSwiaWF0IjoxNjkxODE5OTg1LCJ0b2tlbl9pZCI6IjZhNTU0M2JjLTQzOTktNDg1NS1iYTRmLTk5ZTY3ZDE4NjQ2NSJ9.z0Lb7abC0r0dVly2oLqMPxNuCHIoKpla4iuLv_FjfcQ"
+const user_login_Access_Token2="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0eXBlIjoiQUNDRVNTIFRPS0VOIiwiaWQiOiJLREFVU0VSMDA3MDkiLCJ1c2VybmFtZSI6InN4YTk5Iiwicm9sZSI6IlVTRVIiLCJ1c2VyX3R5cGUiOiJVU0VSIiwiZXhwIjoxNjkxOTA3NDM4LCJpYXQiOjE2OTE4MjEwMzgsInRva2VuX2lkIjoiM2Q2YWMwZjgtZjVmZS00YzI0LWI3NzctODRmNTJhMTc5ZDZjIn0.mPZ0htSlLzf1YcDb1u9dCldSwRJPjnX0eCLoNaSnkZM"
 
 // Main test scenario
 export default function() {
@@ -383,7 +383,6 @@ console.log("login_Access_Token_VC_role",login_Access_Token_VC_role)
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  
 
-sleep(60)
 //post request to  tdr/application/create  to create A TDR application
 
 
@@ -395,7 +394,10 @@ const createTdrApplication= http.post(`${KdaUrl}/tdr/application/create`, JSON.s
         applicants: [
             {
               userId: userRregistrationId
-            }  
+            } ,
+            {
+              userId: userRregistrationId3
+            } ,
         ],
         status: "pending",
         noticeId: noticeIdofNoticeCreation
@@ -564,6 +566,7 @@ console.log("Application Approved")
     const fetchAppReposne=JSON.parse(fetchApplicationAfter.body)
     console.log(`Fetch Application for ${applicationIdByUser}`, fetchAppReposne.data) 
     const myApplId=fetchAppReposne
+    sleep(60)
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  
